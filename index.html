@@ -1,0 +1,134 @@
+<!-- Todo: Responsive -->
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Ad Campaign Link Builder</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</head>
+<body ng-app="builder" ng-controller="ctrl">
+
+
+<div class="showAdd" ng-show="showAdd" ng-animate="{show:'animate-show', hide:'animate-hide'}">
+    <div class="showSource" ng-show="showSource">
+        <label>Source Value</label>
+        <input type="text" ng-model="source.value" />
+        <label>Source Title</label>
+        <input type="text" ng-model="source.title" />
+        <button ng-click="addEntry(1,source.value, source.title)">Add</button>
+        <span class="custom source close" ng-click="showAdd = ! showAdd; showSource = ! showSource;">[x]</span>
+    </div>
+    <div class="showMedium" ng-show="showMedium">
+        <label>Medium Value</label>
+        <input type="text" ng-model="medium.value" />
+        <label>Medium Title</label>
+        <input type="text" ng-model="medium.title" />
+        <button ng-click="addEntry(2,medium.value,medium.title)">Add</button>
+        <span class="custom medium close" ng-click="showAdd = ! showAdd; showMedium = ! showMedium;">[x]</span>
+    </div>
+</div>
+
+<div class="clearfix row header">
+    <div class="leftColumn">&nbsp;</div>
+    <div class="rightColumn topRow"><h1>Ad Campaign URL Builder</div>
+</div>
+    <form name="urlBuilder" ng-submit="generateURL()" novalidate>
+        <!-- Step 1 -->
+        <div class="clearfix row">
+            <div class="leftColumn required" ng-class="{ success: urlBuilder.URL.$valid, danger:urlBuilder.URL.$invalid }">
+                <div class="clearfix vert">
+                    <div class="number">1</div>
+                    <div class="process">Website URL</div>
+                </div>
+            </div>
+            <div class="rightColumn">
+                <input type="text" name="URL" required ng-model="website.url" />
+            </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="clearfix row">
+            <div class="leftColumn required" ng-class="{ success: website.source }">
+                <div class="clearfix vert">
+                    <div class="number">2</div>
+                    <div class="process">Campaign Source</div>
+                </div>
+            </div>
+            <div class="rightColumn">
+                <select name="source" required ng-model="website.source">
+                    <option ng-repeat="source in sources | orderBy:'title'" value="{{source.value}}">{{source.title | capitalize}}</option>
+                </select>
+                <span class="custom source"
+                    ng-click="showAdd = ! showAdd; showSource = ! showSource;"
+                    ng-mouseenter="si = true"
+                    ng-mouseleave="si = false">[+<span ng-show="si"> Custom Source</span>]</span>
+            </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="clearfix row">
+            <div class="leftColumn required" ng-class="{ success: website.medium }">
+                <div class="clearfix vert">
+                    <div class="number">3</div>
+                    <div class="process">Campaign Medium:</div>
+                </div>
+            </div>
+            <div class="rightColumn">
+                <select name="medium" required ng-model="website.medium">
+                    <option ng-repeat="medium in mediums | orderBy:'title'" value="{{medium.value}}" required>{{medium.title | capitalize}}</option>
+                </select>
+
+                <span class="custom medium" ng-click="showAdd = ! showAdd; showMedium = ! showMedium;"
+                    ng-mouseenter="mi = true"
+                    ng-mouseleave="mi = false">[+<span ng-show="mi"> Custom Medium</span>]</span>
+            </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="clearfix row">
+            <div class="leftColumn required" ng-class="{ success: urlBuilder.cName.$valid, danger:urlBuilder.cName.$invalid }">
+                <div class="clearfix vert">
+                    <div class="number">4</div>
+                    <div class="process">Campaign Name</div>
+                </div>
+            </div>
+            <div class="rightColumn">
+                <input type="text" name="cName" required ng-model="website.cName" />
+            </div>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="clearfix row">
+            <div class="leftColumn">
+                <div class="clearfix vert">
+                    <div class="number">5</div>
+                    <div class="process">Campaign Term</div>
+                </div>
+            </div>
+            <div class="rightColumn">
+                <input type="text" name="keyword" ng-model="website.keyword" />
+            </div>
+        </div>
+
+        <!-- Step 6 -->
+        <div class="clearfix row">
+            <div class="leftColumn">
+                <div class="clearfix vert">
+                    <div class="number">6</div>
+                    <div class="process">Campaign Content</div>
+                </div>
+            </div>
+            <div class="rightColumn">
+                <input type="text" name="content" ng-model="website.content" />
+            </div>
+        </div>
+
+        <div class="rightColumn offset-left">
+            <button name="generate" ng-click="generate()" ng-disabled="!urlBuilder.$valid">Create Link</button>
+            <input type="text" name="generated" ng-model="generated" class="generatedURL" />
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,95 @@
+
+.columns                                { @include col(16); }
+
+.half.column,.half.columns              { @include col($columns / 2); }
+.one-third.column,.one-third.columns    { @include col($columns / 3);}
+.two-thirds.column,.one-third.columns   { @include col(($columns / 3)*2);}
+
+.one.column,.one.columns                { @include col(1); }
+.two.columns                            { @include col(2); }
+.three.columns                          { @include col(3); }
+.four.columns                           { @include col(4); }
+.five.columns                           { @include col(5); }
+.six.columns                            { @include col(6); }
+.seven.columns                          { @include col(7); }
+.eight.columns                          { @include col(8); }
+.nine.columns                           { @include col(9); }
+.ten.columns                            { @include col(10); }
+.eleven.columns                         { @include col(11); }
+.twelve.columns                         { @include col(12); }
+.thirteen.columns                       { @include col(13); }
+.fourteen.columns                       { @include col(14); }
+.fifteen.columns                        { @include col(15); }
+.sixteen.columns                        { @include col(16); }
+
+
+@media only screen and (max-width: 767px) {
+    .half.column,.half.columns,
+    .one-third.column,.one-third.columns,
+    .two-thirds.column,.two-thirds.columns,
+    .one.column,.one.columns,
+    .two.columns,
+    .three.columns,
+    .four.columns,
+    .five.columns,
+    .six.columns,
+    .seven.columns,
+    .eight.columns,
+    .nine.columns,
+    .ten.columns,
+    .eleven.columns,
+    .twelve.columns,
+    .thirteen.columns,
+    .fourteen.columns,
+    .fifteen.columns,
+    .sixteen.columns { @include col(16); }
+}
+/* == Base Style Fixes ======================================= */
+img {
+    max-width: 100%;
+    -ms-interpolation-mode: bicubic;
+}
+
+input {
+    border: 1px solid #aaa;
+    padding: 1%;
+    outline: none;
+    margin: 0 0 1% 0;
+    height: 1%;
+    @include box-sizing(border-box);
+}
+
+input.requiredRed,select.requiredRed + div.chzn-container,textarea.requiredRed {
+    background: #FFC0BD;
+}
+
+.dimmer {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 98;
+    display: none;
+    background-color:rgba(0,0,0,.25);
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: '\0020';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    clear: both;
+}
+
+.popUp {
+    position: absolute;
+    left: 50%;
+    z-index: 99;
+    display: none;
+    background-color:#fff;
+}
+
