@@ -11,7 +11,7 @@ $ease: ease-in-out;
 
 
 .header {
-    border-bottom:3px solid $green;
+    border-bottom:3px solid #65c2ed;
 }
 .leftColumn {
     @include LEV-column(20%);
