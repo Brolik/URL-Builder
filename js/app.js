@@ -42,21 +42,21 @@ builder.controller('ctrl', function ($scope) {
 
         // Keywords
         if($scope.urlBuilder.keyword.$viewValue) {
-            generatedURL = generatedURL + "&utm_term=" + $scope.urlBuilder.keyword.$viewValue;
+            generatedURL = generatedURL + "&utm_term=" + encodeURIComponent($scope.urlBuilder.keyword.$viewValue);
         }
 
         // Content
         if($scope.urlBuilder.content.$viewValue) {
-            generatedURL = generatedURL + "&utm_term=" + $scope.urlBuilder.content.$viewValue;
+            generatedURL = generatedURL + "&utm_term=" + encodeURIComponent($scope.urlBuilder.content.$viewValue);
         }
 
         // Campaign Name
         if($scope.urlBuilder.cName.$viewValue) {
-            generatedURL = generatedURL + "&utm_campaign=" + $scope.urlBuilder.cName.$viewValue;
+            generatedURL = generatedURL + "&utm_campaign=" + encodeURIComponent($scope.urlBuilder.cName.$viewValue);
         }
 
 
-        $scope.generated = encodeURIComponent(generatedURL);
+        $scope.generated = generatedURL;
     };
 
     $scope.addEntry = function (list, value, title) {
