@@ -22,6 +22,11 @@ $ease: ease-in-out;
     color:$dark;
     font-size:2.25em;
 
+    .note {
+        font-size:14px;
+        color:#ba3232;
+    }
+
     .number {
         @include border-radius(50%);
         display:inline-block;

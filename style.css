@@ -1,363 +1,365 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic,400italic,600italic);
 /* == Select 2 ================================== */
-/* line 2, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+/* line 2, sass/vendor/_select2.scss */
 .select2-container { position: relative; display: inline-block; zoom: 1; *display: inline; vertical-align: top; width: 25%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
-/* line 12, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+/* line 12, sass/vendor/_select2.scss */
 .select2-drop { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
-/* line 16, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+/* line 16, sass/vendor/_select2.scss */
 .select2-search { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-/* line 18, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+/* line 18, sass/vendor/_select2.scss */
 .select2-search input { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
-/* line 24, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
-.select2-container .select2-choice { border: 1px solid #aaa; display: block; overflow: hidden; white-space: nowrap; position: relative; height: 26px; line-height: 26px; padding: 0 0 0 8px; color: #444; text-decoration: none; background: linear(center bottom, #eeeeee 0%, white 50%); -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; -webkit-background-clip: padding; -moz-background-clip: padding; background-clip: padding-box; }
-/* line 39, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+/* line 24, sass/vendor/_select2.scss */
+.select2-container .select2-choice { border: 1px solid #aaaaaa; display: block; overflow: hidden; white-space: nowrap; position: relative; height: 26px; line-height: 26px; padding: 0 0 0 8px; color: #444; text-decoration: none; background: linear(center bottom, #eeeeee 0%, white 50%); -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; -webkit-background-clip: padding; -moz-background-clip: padding; background-clip: padding-box; }
+/* line 39, sass/vendor/_select2.scss */
 .select2-container.select2-drop-above .select2-choice { border-bottom-color: #aaa; -webkit-border-radius: 0 0 4px 4px; -moz-border-radius: 0 0 4px 4px; -ms-border-radius: 0 0 4px 4px; -o-border-radius: 0 0 4px 4px; border-radius: 0 0 4px 4px; background: linear(center bottom, #eeeeee 0%, white 50%); }
-/* line 45, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+/* line 45, sass/vendor/_select2.scss */
 .select2-container .select2-choice span { margin-right: 26px; display: block; overflow: hidden; white-space: nowrap; -o-text-overflow: ellipsis; -ms-text-overflow: ellipsis; text-overflow: ellipsis; }
-/* line 54, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+/* line 54, sass/vendor/_select2.scss */
 .select2-container .select2-choice abbr { display: block; position: absolute; right: 26px; top: 8px; width: 12px; height: 12px; font-size: 1px; background: url("images/select2.png") right top no-repeat; cursor: pointer; text-decoration: none; border: 0; outline: 0; }
-/* line 67, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+/* line 67, sass/vendor/_select2.scss */
 .select2-container .select2-choice abbr:hover { background-position: right -11px; cursor: pointer; }
 
-/* line 75, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
-.select2-drop { background: #fff; color: #000; border: 1px solid #aaa; border-top: 0; position: absolute; top: 100%; z-index: 9999; width: 100%; margin-top: -1px; -webkit-box-shadow: rgba(0, 0, 0, 0.15), 0 4px 5px; -moz-box-shadow: rgba(0, 0, 0, 0.15), 0 4px 5px; box-shadow: rgba(0, 0, 0, 0.15), 0 4px 5px; -webkit-border-radius: 0 0 4px 4px; -moz-border-radius: 0 0 4px 4px; -ms-border-radius: 0 0 4px 4px; -o-border-radius: 0 0 4px 4px; border-radius: 0 0 4px 4px; }
-/* line 87, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
-.select2-drop.select2-drop-above { margin-top: 1px; border-top: 1px solid #aaa; border-bottom: 0; -webkit-border-radius: 4px 4px 0px 0px; -moz-border-radius: 4px 4px 0px 0px; -ms-border-radius: 4px 4px 0px 0px; -o-border-radius: 4px 4px 0px 0px; border-radius: 4px 4px 0px 0px; -webkit-box-shadow: rgba(0, 0, 0, 0.15), 0 -4px 5px; -moz-box-shadow: rgba(0, 0, 0, 0.15), 0 -4px 5px; box-shadow: rgba(0, 0, 0, 0.15), 0 -4px 5px; }
+/* line 75, sass/vendor/_select2.scss */
+.select2-drop { background: #fff; color: #000; border: 1px solid #aaaaaa; border-top: 0; position: absolute; top: 100%; z-index: 9999; width: 100%; margin-top: -1px; -webkit-box-shadow: rgba(0, 0, 0, 0.15), 0 4px 5px; -moz-box-shadow: rgba(0, 0, 0, 0.15), 0 4px 5px; box-shadow: rgba(0, 0, 0, 0.15), 0 4px 5px; -webkit-border-radius: 0 0 4px 4px; -moz-border-radius: 0 0 4px 4px; -ms-border-radius: 0 0 4px 4px; -o-border-radius: 0 0 4px 4px; border-radius: 0 0 4px 4px; }
+/* line 87, sass/vendor/_select2.scss */
+.select2-drop.select2-drop-above { margin-top: 1px; border-top: 1px solid #aaaaaa; border-bottom: 0; -webkit-border-radius: 4px 4px 0px 0px; -moz-border-radius: 4px 4px 0px 0px; -ms-border-radius: 4px 4px 0px 0px; -o-border-radius: 4px 4px 0px 0px; border-radius: 4px 4px 0px 0px; -webkit-box-shadow: rgba(0, 0, 0, 0.15), 0 -4px 5px; -moz-box-shadow: rgba(0, 0, 0, 0.15), 0 -4px 5px; box-shadow: rgba(0, 0, 0, 0.15), 0 -4px 5px; }
 
-/* line 96, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
-.select2-container .select2-choice div { border-left: 1px solid #aaa; position: absolute; right: 0; top: 0; display: block; height: 100%; width: 18px; -webkit-border-radius: 0 4px 4px 0; -moz-border-radius: 0 4px 4px 0; -ms-border-radius: 0 4px 4px 0; -o-border-radius: 0 4px 4px 0; border-radius: 0 4px 4px 0; -webkit-background-clip: padding; -moz-background-clip: padding; background-clip: padding-box; background: linear(center bototm, #cccccc 0%, #eeeeee 60%); }
-/* line 107, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+/* line 96, sass/vendor/_select2.scss */
+.select2-container .select2-choice div { border-left: 1px solid #aaaaaa; position: absolute; right: 0; top: 0; display: block; height: 100%; width: 18px; -webkit-border-radius: 0 4px 4px 0; -moz-border-radius: 0 4px 4px 0; -ms-border-radius: 0 4px 4px 0; -o-border-radius: 0 4px 4px 0; border-radius: 0 4px 4px 0; -webkit-background-clip: padding; -moz-background-clip: padding; background-clip: padding-box; background: linear(center bototm, #cccccc 0%, #eeeeee 60%); }
+/* line 107, sass/vendor/_select2.scss */
 .select2-container .select2-choice div b { background: url("images/select2.png") no-repeat 0 1px; display: block; width: 100%; height: 100%; }
 
-/* line 115, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+/* line 115, sass/vendor/_select2.scss */
 .select2-search { display: inline-block; white-space: nowrap; z-index: 10000; position: relative; min-height: 26px; width: 100%; margin: 0; padding-left: 4px; padding-right: 4px; }
 
-/* line 127, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+/* line 127, sass/vendor/_select2.scss */
 .select2-search-hidden { display: block; position: absolute; left: -10000px; }
 
-/* line 133, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
-.select2-search input { padding: 4px 20px 4px 5px; outline: 0; border: 1px solid #aaa; font-family: sans-serif; font-size: 1em; width: 100%; margin: 0; height: auto !important; min-height: 26px; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; background: url("images/select2.png") no-repeat 100% -22px, -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(85%, #ffffff), color-stop(99%, #eeeeee)); background: url("images/select2.png") no-repeat 100% -22px, -webkit-linear-gradient(center bottom, #ffffff 85%, #eeeeee 99%); background: url("images/select2.png") no-repeat 100% -22px, -moz-linear-gradient(center bottom, #ffffff 85%, #eeeeee 99%); background: url("images/select2.png") no-repeat 100% -22px, -o-linear-gradient(center bottom, #ffffff 85%, #eeeeee 99%); background: url("images/select2.png") no-repeat 100% -22px, linear-gradient(center bottom, #ffffff 85%, #eeeeee 99%); }
+/* line 133, sass/vendor/_select2.scss */
+.select2-search input { padding: 4px 20px 4px 5px; outline: 0; border: 1px solid #aaaaaa; font-family: sans-serif; font-size: 1em; width: 100%; margin: 0; height: auto !important; min-height: 26px; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; background: url("images/select2.png") no-repeat 100% -22px, -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(85%, #ffffff), color-stop(99%, #eeeeee)); background: url("images/select2.png") no-repeat 100% -22px, -webkit-linear-gradient(center bottom, #ffffff 85%, #eeeeee 99%); background: url("images/select2.png") no-repeat 100% -22px, -moz-linear-gradient(center bottom, #ffffff 85%, #eeeeee 99%); background: url("images/select2.png") no-repeat 100% -22px, -o-linear-gradient(center bottom, #ffffff 85%, #eeeeee 99%); background: url("images/select2.png") no-repeat 100% -22px, linear-gradient(center bottom, #ffffff 85%, #eeeeee 99%); }
 
-/* line 148, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+/* line 148, sass/vendor/_select2.scss */
 .select2-drop.select2-drop-above .select2-search input { margin-top: 4px; }
 
-/* line 152, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+/* line 152, sass/vendor/_select2.scss */
 .select2-search input.select2-active { background: url("images/spinner.gif") no-repeat 100%, -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(85%, #ffffff), color-stop(99%, #eeeeee)); background: url("images/spinner.gif") no-repeat 100%, -webkit-linear-gradient(center bottom, #ffffff 85%, #eeeeee 99%); background: url("images/spinner.gif") no-repeat 100%, -moz-linear-gradient(center bottom, #ffffff 85%, #eeeeee 99%); background: url("images/spinner.gif") no-repeat 100%, -o-linear-gradient(center bottom, #ffffff 85%, #eeeeee 99%); background: url("images/spinner.gif") no-repeat 100%, linear-gradient(center bottom, #ffffff 85%, #eeeeee 99%); }
 
-/* line 157, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+/* line 157, sass/vendor/_select2.scss */
 .select2-container-active .select2-choice, .select2-container-active .select2-choices { border: 1px solid #5897fb; outline: none; -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 0 5px; -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 0 5px; box-shadow: rgba(0, 0, 0, 0.3) 0 0 5px; }
 
-/* line 164, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
-.select2-dropdown-open .select2-choice { border: 1px solid #aaa; border-bottom-color: transparent; -webkit-box-shadow: 0 1px 0 white inset; -moz-box-shadow: 0 1px 0 white inset; box-shadow: 0 1px 0 white inset; background: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #ffffff), color-stop(50%, #eeeeee)); background: -webkit-linear-gradient(center bottom, #ffffff 0%, #eeeeee 50%); background: -moz-linear-gradient(center bottom, #ffffff 0%, #eeeeee 50%); background: -o-linear-gradient(center bottom, #ffffff 0%, #eeeeee 50%); background: linear-gradient(center bottom, #ffffff 0%, #eeeeee 50%); -moz-border-radius-bottomleft: 0; -webkit-border-bottom-left-radius: 0; border-bottom-left-radius: 0; -moz-border-radius-bottomright: 0; -webkit-border-bottom-right-radius: 0; border-bottom-right-radius: 0; }
-/* line 170, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+/* line 164, sass/vendor/_select2.scss */
+.select2-dropdown-open .select2-choice { border: 1px solid #aaaaaa; border-bottom-color: transparent; -webkit-box-shadow: 0 1px 0 white inset; -moz-box-shadow: 0 1px 0 white inset; box-shadow: 0 1px 0 white inset; background: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #ffffff), color-stop(50%, #eeeeee)); background: -webkit-linear-gradient(center bottom, #ffffff 0%, #eeeeee 50%); background: -moz-linear-gradient(center bottom, #ffffff 0%, #eeeeee 50%); background: -o-linear-gradient(center bottom, #ffffff 0%, #eeeeee 50%); background: linear-gradient(center bottom, #ffffff 0%, #eeeeee 50%); -moz-border-radius-bottomleft: 0; -webkit-border-bottom-left-radius: 0; border-bottom-left-radius: 0; -moz-border-radius-bottomright: 0; -webkit-border-bottom-right-radius: 0; border-bottom-right-radius: 0; }
+/* line 170, sass/vendor/_select2.scss */
 .select2-dropdown-open .select2-choice div { background: transparent; border-left: none; }
-/* line 173, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+/* line 173, sass/vendor/_select2.scss */
 .select2-dropdown-open .select2-choice div b { background-position: -18px 1px; }
 
-/* line 179, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+/* line 179, sass/vendor/_select2.scss */
 .select2-results { margin: 4px 4px 4px 0; padding: 0 0 0 4px; position: relative; overflow-x: hidden; overflow-y: auto; max-height: 200px; }
-/* line 186, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+/* line 186, sass/vendor/_select2.scss */
 .select2-results ul.select2-result-sub { margin: 0 0 0 0; }
-/* line 188, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+/* line 188, sass/vendor/_select2.scss */
 .select2-results ul.select2-result-sub > li .select2-result-label { padding-left: 20px; }
-/* line 192, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+/* line 192, sass/vendor/_select2.scss */
 .select2-results ul.select2-result-sub ul.select2-result-sub > li .select2-result-label { padding-left: 40px; }
-/* line 196, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+/* line 196, sass/vendor/_select2.scss */
 .select2-results ul.select2-result-sub ul.select2-result-sub ul.select2-result-sub > li .select2-result-label { padding-left: 60px; }
-/* line 200, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+/* line 200, sass/vendor/_select2.scss */
 .select2-results ul.select2-result-sub ul.select2-result-sub ul.select2-result-sub ul.select2-result-sub > li .select2-result-label { padding-left: 80px; }
-/* line 204, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+/* line 204, sass/vendor/_select2.scss */
 .select2-results ul.select2-result-sub ul.select2-result-sub ul.select2-result-sub ul.select2-result-sub ul.select2-result-sub > li .select2-result-label { padding-left: 100px; }
-/* line 208, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+/* line 208, sass/vendor/_select2.scss */
 .select2-results ul.select2-result-sub ul.select2-result-sub ul.select2-result-sub ul.select2-result-sub ul.select2-result-sub ul.select2-result-sub > li .select2-result-label { padding-left: 110px; }
-/* line 211, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+/* line 211, sass/vendor/_select2.scss */
 .select2-results ul.select2-result-sub ul.select2-result-sub ul.select2-result-sub ul.select2-result-sub ul.select2-result-sub ul.select2-result-sub ul.select2-result-sub > li .select2-result-label { padding-left: 120px; }
-/* line 220, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+/* line 220, sass/vendor/_select2.scss */
 .select2-results li { list-style: none; display: list-item; }
-/* line 223, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+/* line 223, sass/vendor/_select2.scss */
 .select2-results li.select2-result-with-children > .select2-result-label { font-weight: bold; }
-/* line 227, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+/* line 227, sass/vendor/_select2.scss */
 .select2-results .select2-result-label { padding: 3px 7px 4px; margin: 0; cursor: pointer; }
-/* line 232, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+/* line 232, sass/vendor/_select2.scss */
 .select2-results .select2-highlighted { background: #3875d7; color: #fff; }
-/* line 236, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+/* line 236, sass/vendor/_select2.scss */
 .select2-results li em { background: #feffde; font-style: normal; }
-/* line 240, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+/* line 240, sass/vendor/_select2.scss */
 .select2-results .select2-highlighted em { background: transparent; }
-/* line 243, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+/* line 243, sass/vendor/_select2.scss */
 .select2-results .select2-no-results, .select2-results .select2-searching, .select2-results .select2-selection-limit { background: #f4f4f4; display: list-item; }
-/* line 247, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+/* line 247, sass/vendor/_select2.scss */
 .select2-results .select2-disabled { display: none; }
 
-/* line 252, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+/* line 252, sass/vendor/_select2.scss */
 .select2-more-results { background: #f4f4f4; display: list-item; }
-/* line 253, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+/* line 253, sass/vendor/_select2.scss */
 .select2-more-results.select2-active { background: #f4f4f4 url("images/spinner.gif") no-repeat 100%; }
 
-/* line 260, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
-.select2-container.select2-container-disabled .select2-choice { background-color: #f4f4f4; background-image: none; border: 1px solid #ddd; cursor: default; }
-/* line 265, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+/* line 260, sass/vendor/_select2.scss */
+.select2-container.select2-container-disabled .select2-choice { background-color: #f4f4f4; background-image: none; border: 1px solid #dddddd; cursor: default; }
+/* line 265, sass/vendor/_select2.scss */
 .select2-container.select2-container-disabled .select2-choice div { background-color: #f4f4f4; background-image: none; border-left: 0; }
-/* line 270, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+/* line 270, sass/vendor/_select2.scss */
 .select2-container.select2-container-disabled .select2-choice abbr { display: none; }
 
-/* line 276, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
-.select2-container-multi .select2-choices { border: 1px solid #aaa; margin: 0; padding: 0; cursor: text; overflow: hidden; height: auto !important; height: 1%; position: relative; min-height: 26px; background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(1%, #eeeeee), color-stop(15%, #ffffff)); background: -webkit-linear-gradient(top, #eeeeee 1%, #ffffff 15%); background: -moz-linear-gradient(top, #eeeeee 1%, #ffffff 15%); background: -o-linear-gradient(top, #eeeeee 1%, #ffffff 15%); background: linear-gradient(top, #eeeeee 1%, #ffffff 15%); }
-/* line 288, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+/* line 276, sass/vendor/_select2.scss */
+.select2-container-multi .select2-choices { border: 1px solid #aaaaaa; margin: 0; padding: 0; cursor: text; overflow: hidden; height: auto !important; height: 1%; position: relative; min-height: 26px; background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(1%, #eeeeee), color-stop(15%, #ffffff)); background: -webkit-linear-gradient(top, #eeeeee 1%, #ffffff 15%); background: -moz-linear-gradient(top, #eeeeee 1%, #ffffff 15%); background: -o-linear-gradient(top, #eeeeee 1%, #ffffff 15%); background: linear-gradient(top, #eeeeee 1%, #ffffff 15%); }
+/* line 288, sass/vendor/_select2.scss */
 .select2-container-multi.select2-container-active .select2-choices { border: 1px solid #5897fb; outline: none; -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 0 5px; -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 0 5px; box-shadow: rgba(0, 0, 0, 0.3) 0 0 5px; }
-/* line 294, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+/* line 294, sass/vendor/_select2.scss */
 .select2-container-multi .select2-choices li { float: left; list-style: none; }
-/* line 298, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+/* line 298, sass/vendor/_select2.scss */
 .select2-container-multi .select2-choices .select2-search-field { white-space: nowrap; margin: 0; padding: 0; }
-/* line 302, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+/* line 302, sass/vendor/_select2.scss */
 .select2-container-multi .select2-choices .select2-search-field input { color: #666; background: transparent !important; font-family: sans-serif; font-size: 100%; height: 15px; padding: 5px; margin: 1px 0; outline: 0; border: 0; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
-/* line 313, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+/* line 313, sass/vendor/_select2.scss */
 .select2-container-multi .select2-choices .select2-search-field input.select2-active { background: white url("images/spinner.gif") no-repeat 100% !important; }
 
-/* line 321, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
-.select2-default { color: #999 !important; }
+/* line 321, sass/vendor/_select2.scss */
+.select2-default { color: #999999 !important; }
 
-/* line 326, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+/* line 326, sass/vendor/_select2.scss */
 .select2-container-multi .select2-choices .select2-search-choice { color: #333; border: 1px solid #aaaaaa; line-height: 13px; padding: 3px 5px 3px 18px; margin: 3px 0 3px 5px; position: relative; cursor: default; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; -webkit-background-clip: padding; -moz-background-clip: padding; background-clip: padding-box; -webkit-box-shadow: 0 0 2px white inset, 0 1px 0 rgba(0, 0, 0, 0.05); -moz-box-shadow: 0 0 2px white inset, 0 1px 0 rgba(0, 0, 0, 0.05); box-shadow: 0 0 2px white inset, 0 1px 0 rgba(0, 0, 0, 0.05); background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, #f4f4f4), color-stop(50%, #f0f0f0), color-stop(52%, #e8e8e8), color-stop(100%, #eeeeee)); background: -webkit-linear-gradient(top, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%); background: -moz-linear-gradient(top, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%); background: -o-linear-gradient(top, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%); background: linear-gradient(top, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%); }
-/* line 338, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+/* line 338, sass/vendor/_select2.scss */
 .select2-container-multi .select2-choices .select2-search-choice span { cursor: default; }
-/* line 342, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+/* line 342, sass/vendor/_select2.scss */
 .select2-container-multi .select2-choices .select2-search-choice-focus { background: #d4d4d4; }
 
-/* line 347, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+/* line 347, sass/vendor/_select2.scss */
 .select2-search-choice-close { display: block; position: absolute; right: 3px; top: 4px; width: 12px; height: 13px; font-size: 1px; background: url("images/select2.png") right top no-repeat; outline: none; }
 
-/* line 360, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+/* line 360, sass/vendor/_select2.scss */
 .select2-container-multi .select2-search-choice-close { left: 3px; }
-/* line 364, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+/* line 364, sass/vendor/_select2.scss */
 .select2-container-multi .select2-choices .select2-search-choice .select2-search-choice-close:hover, .select2-container-multi .select2-choices .select2-search-choice-focus .select2-search-choice-close { background-position: right -11px; }
-/* line 368, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
-.select2-container-multi.select2-container-disabled .select2-choices { background-color: #f4f4f4; background-image: none; border: 1px solid #ddd; cursor: default; }
-/* line 373, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
-.select2-container-multi.select2-container-disabled .select2-choices .select2-search-choice { background-image: none; background-color: #f4f4f4; border: 1px solid #ddd; padding: 3px 5px 3px 5px; }
-/* line 378, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+/* line 368, sass/vendor/_select2.scss */
+.select2-container-multi.select2-container-disabled .select2-choices { background-color: #f4f4f4; background-image: none; border: 1px solid #dddddd; cursor: default; }
+/* line 373, sass/vendor/_select2.scss */
+.select2-container-multi.select2-container-disabled .select2-choices .select2-search-choice { background-image: none; background-color: #f4f4f4; border: 1px solid #dddddd; padding: 3px 5px 3px 5px; }
+/* line 378, sass/vendor/_select2.scss */
 .select2-container-multi.select2-container-disabled .select2-choices .select2-search-choice .select2-search-choice-close { display: none; }
 
-/* line 385, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+/* line 385, sass/vendor/_select2.scss */
 .select2-result-selectable .select2-match { text-decoration: underline; }
 
-/* line 390, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+/* line 390, sass/vendor/_select2.scss */
 .select2-result-unselectable .select2-result-selectable .select2-match { text-decoration: underline; }
-/* line 393, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+/* line 393, sass/vendor/_select2.scss */
 .select2-result-unselectable .select2-match { text-decoration: none; }
 
-/* line 398, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+/* line 398, sass/vendor/_select2.scss */
 .select2-offscreen { position: absolute; left: -10000px; }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5) { /* line 404, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) { /* line 404, sass/vendor/_select2.scss */
   .select2-search input, .select2-search-choice-close { background-image: url("images/select2x2.png") !important; background-repeat: no-repeat !important; background-size: 60px 40px !important; }
-  /* line 410, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+  /* line 410, sass/vendor/_select2.scss */
   .select2-container .select2-choice abbr, .select2-container .select2-choice div b { background-image: url("images/select2x2.png") !important; background-repeat: no-repeat !important; background-size: 60px 40px !important; }
-  /* line 416, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/vendor/_select2.scss */
+  /* line 416, sass/vendor/_select2.scss */
   .select2-search input { background-position: 100% -21px !important; } }
-/* line 2, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/framework/_framework.scss */
+/* line 2, sass/framework/_framework.scss */
 .columns { position: relative; float: left; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0; }
 
-/* line 4, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/framework/_framework.scss */
+/* line 4, sass/framework/_framework.scss */
 .half.column, .half.columns { position: relative; float: left; width: 50%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0; }
 
-/* line 5, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/framework/_framework.scss */
+/* line 5, sass/framework/_framework.scss */
 .one-third.column, .one-third.columns { position: relative; float: left; width: 33.33333%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0; }
 
-/* line 6, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/framework/_framework.scss */
+/* line 6, sass/framework/_framework.scss */
 .two-thirds.column, .one-third.columns { position: relative; float: left; width: 66.66667%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0; }
 
-/* line 8, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/framework/_framework.scss */
+/* line 8, sass/framework/_framework.scss */
 .one.column, .one.columns { position: relative; float: left; width: 6.25%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0; }
 
-/* line 9, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/framework/_framework.scss */
+/* line 9, sass/framework/_framework.scss */
 .two.columns { position: relative; float: left; width: 12.5%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0; }
 
-/* line 10, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/framework/_framework.scss */
+/* line 10, sass/framework/_framework.scss */
 .three.columns { position: relative; float: left; width: 18.75%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0; }
 
-/* line 11, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/framework/_framework.scss */
+/* line 11, sass/framework/_framework.scss */
 .four.columns { position: relative; float: left; width: 25%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0; }
 
-/* line 12, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/framework/_framework.scss */
+/* line 12, sass/framework/_framework.scss */
 .five.columns { position: relative; float: left; width: 31.25%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0; }
 
-/* line 13, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/framework/_framework.scss */
+/* line 13, sass/framework/_framework.scss */
 .six.columns { position: relative; float: left; width: 37.5%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0; }
 
-/* line 14, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/framework/_framework.scss */
+/* line 14, sass/framework/_framework.scss */
 .seven.columns { position: relative; float: left; width: 43.75%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0; }
 
-/* line 15, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/framework/_framework.scss */
+/* line 15, sass/framework/_framework.scss */
 .eight.columns { position: relative; float: left; width: 50%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0; }
 
-/* line 16, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/framework/_framework.scss */
+/* line 16, sass/framework/_framework.scss */
 .nine.columns { position: relative; float: left; width: 56.25%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0; }
 
-/* line 17, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/framework/_framework.scss */
+/* line 17, sass/framework/_framework.scss */
 .ten.columns { position: relative; float: left; width: 62.5%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0; }
 
-/* line 18, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/framework/_framework.scss */
+/* line 18, sass/framework/_framework.scss */
 .eleven.columns { position: relative; float: left; width: 68.75%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0; }
 
-/* line 19, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/framework/_framework.scss */
+/* line 19, sass/framework/_framework.scss */
 .twelve.columns { position: relative; float: left; width: 75%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0; }
 
-/* line 20, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/framework/_framework.scss */
+/* line 20, sass/framework/_framework.scss */
 .thirteen.columns { position: relative; float: left; width: 81.25%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0; }
 
-/* line 21, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/framework/_framework.scss */
+/* line 21, sass/framework/_framework.scss */
 .fourteen.columns { position: relative; float: left; width: 87.5%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0; }
 
-/* line 22, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/framework/_framework.scss */
+/* line 22, sass/framework/_framework.scss */
 .fifteen.columns { position: relative; float: left; width: 93.75%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0; }
 
-/* line 23, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/framework/_framework.scss */
+/* line 23, sass/framework/_framework.scss */
 .sixteen.columns { position: relative; float: left; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0; }
 
-@media only screen and (max-width: 767px) { /* line 45, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/framework/_framework.scss */
+@media only screen and (max-width: 767px) { /* line 45, sass/framework/_framework.scss */
   .half.column, .half.columns, .one-third.column, .one-third.columns, .two-thirds.column, .two-thirds.columns, .one.column, .one.columns, .two.columns, .three.columns, .four.columns, .five.columns, .six.columns, .seven.columns, .eight.columns, .nine.columns, .ten.columns, .eleven.columns, .twelve.columns, .thirteen.columns, .fourteen.columns, .fifteen.columns, .sixteen.columns { position: relative; float: left; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0; } }
 /* == Base Style Fixes ======================================= */
-/* line 48, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/framework/_framework.scss */
+/* line 48, sass/framework/_framework.scss */
 img { max-width: 100%; -ms-interpolation-mode: bicubic; }
 
-/* line 53, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/framework/_framework.scss */
-input { border: 1px solid #aaa; padding: 1%; outline: none; margin: 0 0 1% 0; height: 1%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+/* line 53, sass/framework/_framework.scss */
+input { border: 1px solid #aaaaaa; padding: 1%; outline: none; margin: 0 0 1% 0; height: 1%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
-/* line 62, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/framework/_framework.scss */
+/* line 62, sass/framework/_framework.scss */
 input.requiredRed, select.requiredRed + div.chzn-container, textarea.requiredRed { background: #FFC0BD; }
 
-/* line 66, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/framework/_framework.scss */
+/* line 66, sass/framework/_framework.scss */
 .dimmer { width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: 98; display: none; background-color: rgba(0, 0, 0, 0.25); }
 
-/* line 78, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/framework/_framework.scss */
+/* line 78, sass/framework/_framework.scss */
 .clearfix:before, .clearfix:after { content: '\0020'; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0; clear: both; }
 
-/* line 88, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/framework/_framework.scss */
+/* line 88, sass/framework/_framework.scss */
 .popUp { position: absolute; left: 50%; z-index: 99; display: none; background-color: #fff; }
 
 /* == Typography ============================================= */
-/* line 4, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/framework/_typography.scss */
+/* line 4, sass/framework/_typography.scss */
 body { font-family: "Source Sans Pro", Helvetica, sans-serif; font-size: 100%; line-height: 1em; letter-spacing: 0.025em; -webkit-font-smoothing: antialiased; }
 
-/* line 12, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/framework/_typography.scss */
+/* line 12, sass/framework/_typography.scss */
 h1, h2, h3, h4, h5, h6 { font-family: "Source Sans Pro", Helvetica, sans-serif; }
 
-/* line 15, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/framework/_typography.scss */
+/* line 15, sass/framework/_typography.scss */
 h1 { font-size: 1.75em; font-weight: lighter; }
 
-/* line 20, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/framework/_typography.scss */
+/* line 20, sass/framework/_typography.scss */
 h2 { font-size: 1.75em; line-height: 1.125em; font-weight: lighter; margin: 20px 0; }
 
-/* line 26, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/framework/_typography.scss */
+/* line 26, sass/framework/_typography.scss */
 h3 { font-size: 1.5em; font-weight: lighter; line-height: 1.125em; }
-/* line 30, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/framework/_typography.scss */
+/* line 30, sass/framework/_typography.scss */
 h3 strong { font-weight: 500; }
-/* line 33, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/framework/_typography.scss */
+/* line 33, sass/framework/_typography.scss */
 h3 em { font-style: italic; }
 
-/* line 38, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/framework/_typography.scss */
+/* line 38, sass/framework/_typography.scss */
 h4 { font-size: 1.25em; font-weight: 500; font-style: italic; }
 
-/* line 44, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/framework/_typography.scss */
+/* line 44, sass/framework/_typography.scss */
 h5 { font-size: 1.125em; font-weight: 600; font-style: italic; }
 
-/* line 50, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/framework/_typography.scss */
+/* line 50, sass/framework/_typography.scss */
 p { font-size: 1.125em; line-height: 1.5em; letter-spacing: 0; }
 
-/* line 55, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/framework/_typography.scss */
+/* line 55, sass/framework/_typography.scss */
 li { font-size: 1.125em; line-height: 1.5em; letter-spacing: 0; }
 
 /* == Font Icons ============================================= */
 /* == Global Site Styles ===================================== */
-/* line 2, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_global.scss */
+/* line 2, sass/_global.scss */
 body { margin: 0; }
 
-/* line 6, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_global.scss */
+/* line 6, sass/_global.scss */
 a { text-decoration: none; }
-/* line 8, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_global.scss */
+/* line 8, sass/_global.scss */
 a:active, a:hover { outline: none; }
 
-/* line 30, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_global.scss */
+/* line 30, sass/_global.scss */
 .centered { margin: 0 auto; max-width: 1400px; }
 
 /* == Padding ================================================ */
-/* line 44, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_global.scss */
+/* line 44, sass/_global.scss */
 .left { padding-left: 2.5%; }
 
-/* line 48, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_global.scss */
+/* line 48, sass/_global.scss */
 .leftNarrow { padding-left: 1.5%; }
 
-/* line 52, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_global.scss */
+/* line 52, sass/_global.scss */
 .right { padding-right: 2.5%; }
 
-/* line 56, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_global.scss */
+/* line 56, sass/_global.scss */
 .rightNarrow { padding-right: 1.5%; }
 
-/* line 13, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
-.header { border-bottom: 3px solid #66a946; }
+/* line 13, sass/_pages.scss */
+.header { border-bottom: 3px solid #65c2ed; }
 
-/* line 16, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+/* line 16, sass/_pages.scss */
 .leftColumn { position: relative; float: left; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0; width: -moz-calc(20% - 0px - 0px); width: -o-calc(20% - 0px - 0px); width: -webkit-calc(20% - 0px - 0px); width: calc(20% - 0px - 0px); margin-left: 0px; margin-right: 0px; display: block; padding: 0 20px; background-color: white; color: #545f64; font-size: 2.25em; }
-/* line 25, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+/* line 25, sass/_pages.scss */
+.leftColumn .note { font-size: 14px; color: #ba3232; }
+/* line 30, sass/_pages.scss */
 .leftColumn .number { -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; display: inline-block; padding: 20px; border: 2px solid #545f64; }
-/* line 31, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+/* line 36, sass/_pages.scss */
 .leftColumn .process { display: inline-block; padding-left: 10px; font-size: 16px; }
-/* line 36, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+/* line 41, sass/_pages.scss */
 .leftColumn.required { -webkit-transition: all 0.25s ease-in-out; -moz-transition: all 0.25s ease-in-out; -o-transition: all 0.25s ease-in-out; transition: all 0.25s ease-in-out; color: #ba3232; }
-/* line 40, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+/* line 45, sass/_pages.scss */
 .leftColumn.required .number { -webkit-transition: all 0.25s ease-in-out; -moz-transition: all 0.25s ease-in-out; -o-transition: all 0.25s ease-in-out; transition: all 0.25s ease-in-out; border-color: #ba3232; }
-/* line 45, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+/* line 50, sass/_pages.scss */
 .leftColumn.success { -webkit-transition: all 0.25s ease-in-out; -moz-transition: all 0.25s ease-in-out; -o-transition: all 0.25s ease-in-out; transition: all 0.25s ease-in-out; color: #66a946; }
-/* line 48, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+/* line 53, sass/_pages.scss */
 .leftColumn.success .number { -webkit-transition: all 0.25s ease-in-out; -moz-transition: all 0.25s ease-in-out; -o-transition: all 0.25s ease-in-out; transition: all 0.25s ease-in-out; border-color: #66a946; }
-/* line 53, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+/* line 58, sass/_pages.scss */
 .leftColumn .vert { margin: 15px; }
 
-/* line 58, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+/* line 63, sass/_pages.scss */
 .rightColumn { position: relative; float: left; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0; width: -moz-calc(80% - 0px - 0px); width: -o-calc(80% - 0px - 0px); width: -webkit-calc(80% - 0px - 0px); width: calc(80% - 0px - 0px); margin-left: 0px; margin-right: 0px; padding: 15px 20px; border-bottom: 1px solid #eceff0; border-left: 1px solid #eceff0; background-color: #f8f9f9; }
-/* line 66, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+/* line 71, sass/_pages.scss */
 .rightColumn.topRow { border-left-color: rgba(0, 0, 0, 0); background-color: white; }
-/* line 71, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+/* line 76, sass/_pages.scss */
 .rightColumn input, .rightColumn select { margin: 15px 0; padding: 10px; width: 45%; border: 1px solid #545f64; font-size: 20px; }
-/* line 78, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+/* line 83, sass/_pages.scss */
 .rightColumn input.generatedURL, .rightColumn select.generatedURL { margin: 1px 0 0 -2px; padding: 12px; width: 90%; }
-/* line 85, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+/* line 90, sass/_pages.scss */
 .rightColumn select { background-color: white; }
 
-/* line 90, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+/* line 95, sass/_pages.scss */
 .offset-left { margin-left: 20%; }
 
-/* line 94, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+/* line 99, sass/_pages.scss */
 .row { position: relative; display: block; }
 
-/* line 99, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+/* line 104, sass/_pages.scss */
 .vertAlign { position: relative; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); display: block; height: 200px; }
 
-/* line 104, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+/* line 109, sass/_pages.scss */
 .custom { cursor: pointer; }
-/* line 107, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+/* line 112, sass/_pages.scss */
 .custom.close { position: absolute; top: 5px; right: 5px; }
 
-/* line 113, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+/* line 118, sass/_pages.scss */
 .showAdd { position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 40; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.4); }
-/* line 124, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+/* line 129, sass/_pages.scss */
 .showAdd label { display: block; }
-/* line 127, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+/* line 132, sass/_pages.scss */
 .showAdd input { position: relative; z-index: 60; display: block; margin: 10px 0; padding: 10px; width: 100%; height: auto; font-size: 18px; }
-/* line 138, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+/* line 143, sass/_pages.scss */
 .showAdd .showSource, .showAdd .showMedium { -webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.25); -moz-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.25); box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.25); position: absolute; top: 45%; left: 45%; z-index: 50; padding: 20px; width: 350px; height: 200px; border: 2px soild #545f64; background: white; }
-/* line 152, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+/* line 157, sass/_pages.scss */
 .showAdd.animate-show, .showAdd.animate-hide { -webkit-transition: all linear 1s; -moz-transition: all linear 1s; -ms-transition: all linear 1s; -o-transition: all linear 1s; transition: all linear 1s; }
 
-/* line 161, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+/* line 166, sass/_pages.scss */
 button { *display: inline; *zoom: 1; background-repeat: repeat-x; text-align: center; vertical-align: middle; cursor: pointer; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #545f64), color-stop(100%, #31383a)); background: -webkit-linear-gradient(top, #545f64, #31383a); background: -moz-linear-gradient(top, #545f64, #31383a); background: -o-linear-gradient(top, #545f64, #31383a); background: linear-gradient(top, #545f64, #31383a); background-color: #545f64; color: #fff; text-shadow: rgba(0, 0, 0, 0.4) 0 1px 1px; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; padding: 20px; border: none; }
-/* line 138, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/framework/_mixins.scss */
+/* line 138, sass/framework/_mixins.scss */
 button:hover { -webkit-transition: all 0.5 ease-in-out; -moz-transition: all 0.5 ease-in-out; -o-transition: all 0.5 ease-in-out; transition: all 0.5 ease-in-out; background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4d626b), color-stop(100%, #4d626b)); background: -webkit-linear-gradient(top, #4d626b, #4d626b); background: -moz-linear-gradient(top, #4d626b, #4d626b); background: -o-linear-gradient(top, #4d626b, #4d626b); background: linear-gradient(top, #4d626b, #4d626b); text-shadow: #545f64; background-color: #545f64; -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 2px 3px rgba(0, 0, 0, 0.2098); -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 2px 3px rgba(0, 0, 0, 0.2098); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 2px 3px rgba(0, 0, 0, 0.2098); }
-/* line 146, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/framework/_mixins.scss */
+/* line 146, sass/framework/_mixins.scss */
 button:active { background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #434b4f), color-stop(100%, #434b4f)); background: -webkit-linear-gradient(top, #434b4f, #434b4f); background: -moz-linear-gradient(top, #434b4f, #434b4f); background: -o-linear-gradient(top, #434b4f, #434b4f); background: linear-gradient(top, #434b4f, #434b4f); -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
-/* line 167, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+/* line 172, sass/_pages.scss */
 button[name="generate"] { margin: 0 10px; }
