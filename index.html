@@ -126,8 +126,8 @@
         </div>
 
         <div class="rightColumn offset-left">
-            <button name="generate" ng-click="generate()" ng-disabled="!urlBuilder.$valid">Create Link</button>
-            <input type="text" name="generated" ng-model="generated" class="generatedURL" />
+            <div><button name="generate" ng-click="generate()" ng-disabled="!urlBuilder.$valid">Create Link</button></div>
+            <div class="generatedURL"><input type="text" name="generated" ng-model="generated" class="generatedURL" /></div>
         </div>
 
         <div class="clearfix row">
