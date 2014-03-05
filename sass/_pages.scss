@@ -11,7 +11,7 @@ $ease: ease-in-out;
 
 
 .generatedURL {
-    margin-bottom:15px;
+    margin-top:25px;
 }
 
 .header {
@@ -40,7 +40,7 @@ $ease: ease-in-out;
     .process {
         display:inline-block;
         padding-left:10px;
-        font-size:16px;
+        font-size:18px;
     }
     &.required {
 
@@ -67,10 +67,11 @@ $ease: ease-in-out;
 .rightColumn {
     @include LEV-column(80%);
     padding:15px 20px;
+    /*height:110px;
     border-bottom:1px solid $lightGray;
 
     border-left:1px solid $lightGray;
-    background-color:$light;
+    background-color:$light;*/
 
     &.topRow {
         border-left-color:rgba(0,0,0,0);
@@ -80,14 +81,19 @@ $ease: ease-in-out;
     input, select {
         margin:15px 0;
         padding:10px;
-        width:45%;
-        border:1px solid $dark;
-        font-size:20px;
+        width:50%;
+        height:50px;
+        color:$dark;
+        border:3px solid $lightGray;
+        outline:none;
+        font-size:18px;
+        font-family:'Source Sans Pro', Helvetica, sans-serif;
 
         &.generatedURL {
-            margin: 1px 0 0 -2px;
+            margin:1px 0 0 -2px;
             padding:12px;
-            width:90%;
+            width:80%;
+            border:3px solid #65c2ed;
         }
     }
 

@@ -1,0 +1,46 @@
+@media (max-width:1450px) {
+	.leftColumn {
+		.process {
+			display:block;
+		}
+	}
+}
+
+
+@media (max-width:1300px) {
+
+ .rightColumn {
+    input, select {
+        width:80%;
+
+        &.generatedURL {
+            width:100%;
+        }
+    }
+	}
+}
+
+
+@media (max-width:1100px) {
+.leftColumn {
+	.process{
+		width:90px;
+		margin-top: 5px;
+		line-height: 1.2em;
+		}
+	}
+}
+
+
+@media (max-width:900px) {
+
+ .rightColumn {
+    input, select {
+        width:100%;
+
+        &.generatedURL {
+            width:100%;
+        }
+    }
+	}
+}

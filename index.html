@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Ad Campaign Link Builder</title>
+    <title>Campaign URL Builder</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
@@ -32,7 +32,7 @@
 
 <div class="clearfix row header">
     <div class="leftColumn">&nbsp;</div>
-    <div class="rightColumn topRow"><h1>Ad Campaign URL Builder</div>
+    <div class="rightColumn topRow"><h1>Campaign URL Builder</div>
 </div>
     <form name="urlBuilder" ng-submit="generateURL()" novalidate>
         <!-- Step 1 -->
@@ -130,13 +130,13 @@
             <div class="generatedURL"><input type="text" name="generated" ng-model="generated" class="generatedURL" /></div>
         </div>
 
-        <div class="clearfix row">
+        <!--<div class="clearfix row">
             <div class="leftColumn">
                 <div class="clearfix vert">
                 <div class="note"><p>* denotes a required field</p></div>
                 </div>
             </div>
-        </div>
+        </div>-->
     </form>
 </body>
 </html>
