@@ -1,7 +1,8 @@
-@media (max-width:1450px) {
+@media (max-width:1550px) {
 	.leftColumn {
 		.process {
 			display:block;
+			margin-top:10px;
 		}
 	}
 }
@@ -43,4 +44,23 @@
         }
     }
 	}
+}
+
+@media (max-width:650px) {
+
+ .rightColumn {
+    width:100%;
+    margin-left:0px;
+
+}
+
+.leftColumn {
+	width:100%;
+
+	.process {
+		width:200px;
+		display:inline-block;
+	}
+}
+
 }
