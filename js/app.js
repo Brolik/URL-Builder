@@ -42,7 +42,11 @@ builder.controller('ctrl', function ($scope) {
 
         // Keywords
         if($scope.urlBuilder.keyword.$viewValue) {
-            generatedURL = generatedURL + "&utm_term=" + encodeURIComponent($scope.urlBuilder.keyword.$viewValue);
+            if($scope.urlBuilder.source.$viewValue == 'bing') {
+                generatedURL = generatedURL + "&utm_term=" + $scope.urlBuilder.keyword.$viewValue;
+            } else {
+                generatedURL = generatedURL + "&utm_term=" + encodeURIComponent($scope.urlBuilder.keyword.$viewValue);
+            }
         }
 
         // Content
