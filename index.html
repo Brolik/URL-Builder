@@ -44,7 +44,9 @@
                 </div>
             </div>
             <div class="rightColumn">
-                <input type="text" name="URL" required ng-model="website.url" />
+                <input type="text" name="URL" required
+                    ng-model="website.url"
+                    ng-pattern="/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/" />
             </div>
         </div>
 
@@ -57,7 +59,7 @@
                 </div>
             </div>
             <div class="rightColumn">
-                <select name="source" required ng-model="website.source">
+                <select name="source" required ng-model="website.source" ng-change="sourceCheck(website.source)">
                     <option ng-repeat="source in sources | orderBy:'title'" value="{{source.value}}">{{source.title | capitalize}}</option>
                 </select>
                 <span class="custom source"
@@ -108,7 +110,10 @@
                 </div>
             </div>
             <div class="rightColumn">
-                <input type="text" name="keyword" ng-model="website.keyword" />
+                <div class="wrap">
+                    <input type="text" name="keyword" ng-model="website.keyword" ng-blur="keywordCheck(website.source,website.keyword)" />
+                    <div class="bingError" ng-show="showBingError">If the source is bing, the campaign term can only be blank, or {QueryString}</div>
+                </div>
             </div>
         </div>
 
@@ -129,14 +134,6 @@
             <button name="generate" ng-click="generate()" ng-disabled="!urlBuilder.$valid">Create Link</button>
             <div class="generatedURL"><input type="text" name="generated" ng-model="generated" class="generatedURL" /></div>
         </div>
-
-        <!--<div class="clearfix row">
-            <div class="leftColumn">
-                <div class="clearfix vert">
-                <div class="note"><p>* denotes a required field</p></div>
-                </div>
-            </div>
-        </div>-->
     </form>
 </body>
 </html>

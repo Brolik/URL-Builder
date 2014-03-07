@@ -73,6 +73,21 @@ builder.controller('ctrl', function ($scope) {
         $scope.showAdd = false;
     };
 
+    $scope.sourceCheck = function (source,string) {
+        if(source == 'bing') {
+            $scope.website.keyword = '{QueryString}';
+        }
+    };
+    $scope.keywordCheck = function (source, string) {
+        if(source == 'bing') {
+            if(string && string != '{QueryString}') {
+                $scope.website.keyword = '{QueryString}';
+            }
+
+            $scope.showBingError = true;
+        }
+    };
+
 });
 
 /* == Filters ================================================ */
@@ -81,3 +96,4 @@ builder.filter('capitalize', function () {
         return input.substring(0,1).toUpperCase()+input.substring(1);
     };
 });
+

@@ -316,57 +316,65 @@ a:active, a:hover { outline: none; }
 /* line 51, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
 .leftColumn.required .number { -webkit-transition: all 0.25s ease-in-out; -moz-transition: all 0.25s ease-in-out; -o-transition: all 0.25s ease-in-out; transition: all 0.25s ease-in-out; border-color: #d10101; }
 /* line 56, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
-.leftColumn.success { -webkit-transition: all 0.25s ease-in-out; -moz-transition: all 0.25s ease-in-out; -o-transition: all 0.25s ease-in-out; transition: all 0.25s ease-in-out; color: #04cc46; }
+.leftColumn.success { -webkit-transition: all, 0.25s, ease-in-out; -moz-transition: all, 0.25s, ease-in-out; -o-transition: all, 0.25s, ease-in-out; transition: all, 0.25s, ease-in-out; color: #1f9d52; }
 /* line 59, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
-.leftColumn.success .number { -webkit-transition: all 0.25s ease-in-out; -moz-transition: all 0.25s ease-in-out; -o-transition: all 0.25s ease-in-out; transition: all 0.25s ease-in-out; border-color: #04cc46; }
+.leftColumn.success .number { -webkit-transition: all, ease-in-out; -moz-transition: all, ease-in-out; -o-transition: all, ease-in-out; transition: all, ease-in-out; border-color: #1f9d52; }
 /* line 64, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
 .leftColumn .vert { margin: 15px; }
 
 /* line 69, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
 .rightColumn { position: relative; float: left; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0; width: -moz-calc(80% - 0px - 0px); width: -o-calc(80% - 0px - 0px); width: -webkit-calc(80% - 0px - 0px); width: calc(80% - 0px - 0px); margin-left: 0px; margin-right: 0px; padding: 15px 20px;     /*height:110px; border-bottom:1px solid $lightGray;
  border-left:1px solid $lightGray; background-color:$light;*/ }
-/* line 78, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
-.rightColumn.topRow { border-left-color: rgba(0, 0, 0, 0); background-color: white; }
-/* line 83, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
-.rightColumn input, .rightColumn select { margin: 15px 0; padding: 10px; width: 50%; height: 50px; color: #545f64; border: 3px solid #e7e7e7; outline: none; font-size: 18px; font-family: 'Source Sans Pro', Helvetica, sans-serif; }
-/* line 94, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+/* line 80, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+.rightColumn.topRow h1 { font-size: 2em; }
+/* line 85, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+.rightColumn input, .rightColumn select { margin: 10px 0; padding: 10px; width: 50%; color: #545f64; border: 2px solid #c5c5c5; outline: none; font-size: 18px; font-family: 'Source Sans Pro', Helvetica, sans-serif; }
+/* line 95, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+.rightColumn input:focus, .rightColumn select:focus { border: 2px solid #65c2ed; -webkit-transition: all, 0.5s, ease-in; -moz-transition: all, 0.5s, ease-in; -o-transition: all, 0.5s, ease-in; transition: all, 0.5s, ease-in; }
+/* line 101, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+.rightColumn input.ng-dirty.ng-invalid, .rightColumn select.ng-dirty.ng-invalid { border-color: #d10101; }
+/* line 105, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
 .rightColumn input.generatedURL, .rightColumn select.generatedURL { margin: 1px 0 0 -2px; padding: 12px; width: 75%; border: 3px solid #65c2ed; }
-/* line 102, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+/* line 113, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
 .rightColumn select { background-color: white; }
+/* line 117, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+.rightColumn .wrap { position: relative; }
+/* line 120, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+.rightColumn .bingError { position: absolute; margin-left: 10px; font-style: italic; font-size: 14px; color: #d10101; }
 
-/* line 107, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+/* line 129, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
 .offset-left { margin-left: 20%; }
 
-/* line 111, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+/* line 133, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
 .row { position: relative; display: block; }
 
-/* line 116, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+/* line 138, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
 .vertAlign { position: relative; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); display: block; height: 200px; }
 
-/* line 121, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+/* line 143, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
 .custom { cursor: pointer; }
-/* line 124, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+/* line 146, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
 .custom.close { position: absolute; top: 5px; right: 5px; }
 
-/* line 130, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+/* line 152, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
 .showAdd { position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 40; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.4); }
-/* line 141, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+/* line 163, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
 .showAdd label { display: block; }
-/* line 144, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+/* line 166, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
 .showAdd input { position: relative; z-index: 60; display: block; margin: 10px 0; padding: 10px; width: 100%; height: auto; font-size: 18px; }
-/* line 155, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
-.showAdd .showSource, .showAdd .showMedium { -webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.25); -moz-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.25); box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.25); position: absolute; top: 45%; left: 45%; z-index: 50; padding: 50px 35px; width: 350px; height: 200px; border: 2px soild #545f64; background: white; }
-/* line 169, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+/* line 177, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+.showAdd .showSource, .showAdd .showMedium { -webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.25); -moz-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.25); box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.25); position: absolute; margin: auto; top: 0; right: 0; bottom: 0; left: 0; z-index: 50; padding: 50px 35px; width: 350px; height: 200px; border: 2px soild #545f64; background: white; }
+/* line 194, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
 .showAdd.animate-show, .showAdd.animate-hide { -webkit-transition: all linear 1s; -moz-transition: all linear 1s; -ms-transition: all linear 1s; -o-transition: all linear 1s; transition: all linear 1s; }
 
-/* line 178, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+/* line 203, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
 button { *display: inline; *zoom: 1; background-repeat: repeat-x; text-align: center; vertical-align: middle; cursor: pointer; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #65c2ed), color-stop(100%, #21a7e5)); background: -webkit-linear-gradient(top, #65c2ed, #21a7e5); background: -moz-linear-gradient(top, #65c2ed, #21a7e5); background: -o-linear-gradient(top, #65c2ed, #21a7e5); background: linear-gradient(top, #65c2ed, #21a7e5); background-color: #65c2ed; color: #555555; text-shadow: rgba(255, 255, 255, 0.7302) 0 1px 0; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; padding: 20px; border: none; font-family: 'Source Sans Pro', Helvetica, sans-serif; font-size: 16px; color: #fff; text-shadow: none; letter-spacing: 0.03em; }
 /* line 138, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/framework/_mixins.scss */
 button:hover { -webkit-transition: all 0.5 ease-in-out; -moz-transition: all 0.5 ease-in-out; -o-transition: all 0.5 ease-in-out; transition: all 0.5 ease-in-out; background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5fc4f3), color-stop(100%, #5fc4f3)); background: -webkit-linear-gradient(top, #5fc4f3, #5fc4f3); background: -moz-linear-gradient(top, #5fc4f3, #5fc4f3); background: -o-linear-gradient(top, #5fc4f3, #5fc4f3); background: linear-gradient(top, #5fc4f3, #5fc4f3); text-shadow: #65c2ed; background-color: #65c2ed; -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 2px 3px rgba(0, 0, 0, 0.13431); -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 2px 3px rgba(0, 0, 0, 0.13431); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 2px 3px rgba(0, 0, 0, 0.13431); }
 /* line 146, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/framework/_mixins.scss */
 button:active { background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #43b4e9), color-stop(100%, #43b4e9)); background: -webkit-linear-gradient(top, #43b4e9, #43b4e9); background: -moz-linear-gradient(top, #43b4e9, #43b4e9); background: -o-linear-gradient(top, #43b4e9, #43b4e9); background: linear-gradient(top, #43b4e9, #43b4e9); -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
-/* line 189, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
-button[name="generate"] { margin: 15px 0 30px 0; }
+/* line 214, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+button[name="generate"] { margin: 15px 0 27px 0; }
 
 @media (max-width: 1550px) { /* line 3, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_responsive.scss */
   .leftColumn .process { display: block; margin-top: 10px; } }

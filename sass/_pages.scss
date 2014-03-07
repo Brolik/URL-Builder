@@ -54,10 +54,10 @@ $ease: ease-in-out;
         }
     }
     &.success {
-        @include transition(all $duration $ease);
+        @include transition(all, $duration, $ease);
         color:$green;
         .number {
-            @include transition(all $duration $ease);
+            @include transition(all, $duration, $ease);
             border-color:$green;
         }
     }
@@ -76,31 +76,53 @@ $ease: ease-in-out;
     background-color:$light;*/
 
     &.topRow {
-        border-left-color:rgba(0,0,0,0);
-        background-color:$white;
+
+        h1 {
+            font-size:2em;
+        }
     }
 
     input, select {
-        margin:15px 0;
+        margin:10px 0;
         padding:10px;
         width:50%;
-        height:50px;
         color:$dark;
-        border:3px solid $lightGray;
+        border:2px solid $lightGray;
         outline:none;
         font-size:18px;
         font-family:'Source Sans Pro', Helvetica, sans-serif;
 
+        &:focus {
+            border:2px solid $blue;
+            @include transition(all, .5s, ease-in);
+
+        }
+        &.ng-dirty {
+            &.ng-invalid {
+                border-color:$red;
+            }
+        }
         &.generatedURL {
             margin:1px 0 0 -2px;
             padding:12px;
             width:75%;
-            border:3px solid #65c2ed;
+            border:3px solid $blue;
         }
     }
 
     select {
         background-color:$white;
+    }
+
+    .wrap {
+        position:relative;
+    }
+    .bingError {
+        position:absolute;
+        margin-left:10px;
+        font-style:italic;
+        font-size:14px;
+        color:$red;
     }
 }
 
@@ -156,8 +178,11 @@ $ease: ease-in-out;
 
         @include box-shadow(1px 1px 5px 1px rgba(00,00,00,.25));
         position:absolute;
-        top:45%;
-        left:45%;
+        margin: auto;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
         z-index:50;
         padding:50px 35px;
         width:350px;
@@ -187,7 +212,7 @@ button {
     letter-spacing:0.03em;
 
     &[name="generate"] {
-        margin:15px 0 30px 0;
+        margin:15px 0 27px 0;
     }
 }
 
