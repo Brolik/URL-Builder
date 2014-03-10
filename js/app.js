@@ -39,7 +39,6 @@ builder.controller('ctrl', function ($scope) {
             generatedURL = generatedURL + "&utm_medium=" + $scope.urlBuilder.medium.$viewValue;
         }
 
-
         // Keywords
         if($scope.urlBuilder.keyword.$viewValue) {
             generatedURL = generatedURL + "&utm_term=" + encodeURIComponent($scope.urlBuilder.keyword.$viewValue);
@@ -54,7 +53,6 @@ builder.controller('ctrl', function ($scope) {
         if($scope.urlBuilder.cName.$viewValue) {
             generatedURL = generatedURL + "&utm_campaign=" + encodeURIComponent($scope.urlBuilder.cName.$viewValue);
         }
-
 
         $scope.generated = generatedURL;
     };
