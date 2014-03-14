@@ -1,5 +1,7 @@
 .DS_Store
 .sass-cache/
-.sublime-project
-.sublime-workspace
+*.sublime-project
+*.sublime-workspace
 sftp-config.json
+
+
