@@ -16,6 +16,8 @@ builder.controller('ctrl', function ($scope) {
 
     $scope.mediums = [
         { value:'cpc',      title:'CPC'      },
+        { value:'cpm',      title:'CPM'      },
+        { value:'cpa',      title:'CPA'      },
         { value:'referral', title:'Referral' },
         { value:'organic',  title:'organic'  },
         { value:'email',    title:'email'    }
