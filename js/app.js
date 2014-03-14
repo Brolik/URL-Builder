@@ -52,7 +52,7 @@ builder.controller('ctrl', function ($scope) {
 
         // Content
         if($scope.urlBuilder.content.$viewValue) {
-            generatedURL = generatedURL + "&utm_term=" + encodeURIComponent($scope.urlBuilder.content.$viewValue);
+            generatedURL = generatedURL + "&utm_content=" + encodeURIComponent($scope.urlBuilder.content.$viewValue);
         }
 
         // Campaign Name
