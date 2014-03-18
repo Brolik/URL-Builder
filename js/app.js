@@ -1,4 +1,4 @@
-var builder = angular.module('builder', [] );
+var builder = angular.module('builder', ['ui.bootstrap'] );
 
 builder.controller('ctrl', function ($scope) {
 
