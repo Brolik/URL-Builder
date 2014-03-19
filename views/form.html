@@ -1,0 +1,37 @@
+<div class="home">
+    <div class="centered clearfix">
+        <div class="container">
+            <h2>Campaign URL Builder</h2>
+
+            <form>
+                <section ng-repeat="field in fields">
+                    <div ng-switch="field.type">
+                        <div ng-switch-when="input">
+                            <input type="text" ng-model="field.model" required="field.required" />
+                        </div>
+                        <div ng-switch-when="select">
+                            <select ng-model="field.model" ng-switch="field.model">
+                                {{field.model}}
+                                <option ng-switch-when="source" ng-repeat="source in sources">{{source.title}}</option>
+                                <option ng-switch-when="medium" ng-repeat="medium in mediums">{{medium.title}}</option>
+                            </select>
+                        </div>
+                    </div>
+                </section>
+            </form>
+        </div>
+        <div class="directions">
+            <h3>Directions</h3>
+
+            <section>
+                <div class="clearfix">
+                    <div class="two columns"><h3 class="circle required">1</h3></div>
+                    <div class="fourteen columns">
+                        <h3 class="littleMargin">Campaign URL</h3>
+                        <span class="links"><a href="#">Help</a> | <a href="#">Custom</a></span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>

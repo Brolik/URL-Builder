@@ -1,6 +1,58 @@
-var builder = angular.module('builder', ['ui.bootstrap'] );
+var builder = angular.module('builder', ['ngRoute'] );
 
-builder.controller('ctrl', function ($scope) {
+builder.config(['$routeProvider', function($routeProvider) {
+    $routeProvider.
+        when('/help', {
+            templateUrl: 'views/fullHelp.html',
+            controller: 'helpCtrl'
+        }).
+        when('/', {
+            templateUrl: 'views/form.html',
+            controller: 'mainCtrl'
+        }).
+        otherwise({
+            redirectTo: '/'
+        });
+}]);
+
+builder.controller('mainCtrl',
+    ['$scope','$http','$sce',
+    function($scope,$http, $sce) {
+
+    // Handle the popup.
+    $scope.modalShow = false;
+    $scope.toggleModal = function (type, content) {
+        $scope.modalShown = !$scope.modalShown;
+
+        if(type === 'help') {
+            var httpRequest = $http({
+                method: 'POST',
+                url:'js/data.json',
+                dataType: 'json'
+            }).success(function (data, status) {
+                var response = data[0].sections;
+
+                for(var i = 0; i < response.length; i++) {
+                    if(response[i].ID === content) {
+                        $scope.dialogTitle = $sce.trustAdHtml(response[i].title);
+                        $scope.dialogContent = $sce.trustAsHtml(response[i].content);
+                    }
+                }
+            }).error(function (data, status) {
+                $scope.dialogTitle = "Error";
+                $scope.dialogContent = $sce.trustedAsHtml("There was an error communicating with the server and getting the information you requested.");
+            });
+        } else {
+
+        }
+    };
+
+    // Display each of the fields
+    $scope.fields = [
+        { type: 'input' , title: 'Campaign URL', required: true, model: 'url', custom: false },
+        { type: 'select', title: 'Campaign Source', required: true, model: 'source', custom: true },
+        { type: 'select', title: 'Campaign Medium', required: true, model: 'medium', custom: true }
+    ];
 
     $scope.sources = [
         { value:'newsletter',       title:'Newsletter'},
@@ -23,81 +75,38 @@ builder.controller('ctrl', function ($scope) {
         { value:'email',    title:'email'    }
     ];
 
-    $scope.generate = function () {
-        var generatedURL = '';
+}]);
 
-        if($scope.urlBuilder.URL.$viewValue.substr(0,4) != 'http') {
-            generatedURL = generatedURL + "http://";
-        }
-        generatedURL = generatedURL + $scope.urlBuilder.URL.$viewValue;
+// Help Page
+builder.controller('helpCtrl', ['$scope', function($scope) {
 
-        // Scope
-        if($scope.urlBuilder.source.$viewValue) {
-            generatedURL = generatedURL + "?utm_source=" + $scope.urlBuilder.source.$viewValue;
-        }
+}]);
 
-        // Medium
-        if($scope.urlBuilder.medium.$viewValue) {
-            generatedURL = generatedURL + "&utm_medium=" + $scope.urlBuilder.medium.$viewValue;
-        }
+/*
 
-        // Keywords
-        if($scope.urlBuilder.keyword.$viewValue) {
-            if($scope.urlBuilder.source.$viewValue == 'bing') {
-                generatedURL = generatedURL + "&utm_term=" + $scope.urlBuilder.keyword.$viewValue;
-            } else {
-                generatedURL = generatedURL + "&utm_term=" + encodeURIComponent($scope.urlBuilder.keyword.$viewValue);
-            }
-        }
+$scope.fields = [
+    { type: 'input' , title: 'Campaign URL', required: true, help: 'url', custom: false}
+]
 
-        // Content
-        if($scope.urlBuilder.content.$viewValue) {
-            generatedURL = generatedURL + "&utm_content=" + encodeURIComponent($scope.urlBuilder.content.$viewValue);
-        }
+$scope.sources = [
+    { value:'newsletter',       title:'Newsletter'},
+    { value:'facebook.com',     title:'Facebook'  },
+    { value:'google',           title:'google'    },
+    { value:'bing',             title:'bing'      },
+    { value:'twitter.com',      title:'twitter'   },
+    { value:'yahoo',            title:'yahoo'     },
+    { value:'youtube.com',      title:'youtube'   },
+    { value:'linkedin.com',     title:'linkedin'  },
+    { value:'pinterest.com',    title:'pinterest' }
+];
 
-        // Campaign Name
-        if($scope.urlBuilder.cName.$viewValue) {
-            generatedURL = generatedURL + "&utm_campaign=" + encodeURIComponent($scope.urlBuilder.cName.$viewValue);
-        }
+$scope.mediums = [
+    { value:'cpc',      title:'CPC'      },
+    { value:'cpm',      title:'CPM'      },
+    { value:'cpa',      title:'CPA'      },
+    { value:'referral', title:'Referral' },
+    { value:'organic',  title:'organic'  },
+    { value:'email',    title:'email'    }
+];
 
-        $scope.generated = generatedURL;
-    };
-
-    $scope.addEntry = function (list, value, title) {
-        if(list == 1) {
-            $scope.sources.push({ 'value':value, 'title': title });
-            $scope.showSource = false;
-            $scope.source = "";
-        } else {
-            $scope.mediums.push({ 'value':value, 'title':title });
-            $scope.showMedium = false;
-            $scope.medium = false;
-        }
-
-        $scope.showAdd = false;
-    };
-
-    $scope.sourceCheck = function (source,string) {
-        if(source == 'bing') {
-            $scope.website.keyword = '{QueryString}';
-        }
-    };
-    $scope.keywordCheck = function (source, string) {
-        if(source == 'bing') {
-            if(string && string != '{QueryString}') {
-                $scope.website.keyword = '{QueryString}';
-            }
-
-            $scope.showBingError = true;
-        }
-    };
-
-});
-
-/* == Filters ================================================ */
-builder.filter('capitalize', function () {
-    return function(input, scope) {
-        return input.substring(0,1).toUpperCase()+input.substring(1);
-    };
-});
-
+*/
