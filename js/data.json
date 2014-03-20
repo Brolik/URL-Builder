@@ -1,13 +1,34 @@
 [{
     "sections": [
         {
-            "ID":"URL",
+            "ID":"url",
             "title":"URL (required)",
             "content":"Use the full landing page URL. <br /> Make sure there are no other link appendages included."
         },
         {
-            "ID":"MEDIUM",
-            "title":"Campaign Medium"
+            "ID":"medium",
+            "title":"Campaign Medium",
+            "content":"Camp Medium"
+        },
+        {
+            "ID":"source",
+            "title":"<b>Campaign Source</b> <i>(required)</i>",
+            "content":"Source"
+        },
+        {
+            "ID":"campaign",
+            "title":"Campaign Name (required)",
+            "content":"Camp Name"
+        },
+        {
+            "ID":"term",
+            "title":"Campaign Term (optional)",
+            "content":"Camp Term"
+        },
+        {
+            "ID":"content",
+            "title":"Campaign Content (optional)",
+            "content":"Camp Cont"
         }
     ]
 }]

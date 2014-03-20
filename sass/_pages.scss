@@ -12,8 +12,6 @@ $ease: ease-in-out;
 
 /* == /#/Home ================================================ */
 .home {
-    margin-top:5%;
-
     section {
 
         @include box-sizing(border-box);
@@ -31,7 +29,7 @@ $ease: ease-in-out;
         float:left;
         margin-left:10%;
         padding:20px;
-        width:60%;
+        width:65%;
         border:1px solid #bcbcbc;
         background-color:#fbfbfb;
 
@@ -58,7 +56,7 @@ $ease: ease-in-out;
         position:relative;
         float:left;
         padding:20px;
-        width:30%;
+        width:25%;
         border:1px solid rgba(0,0,0,0);
 
         .circle {

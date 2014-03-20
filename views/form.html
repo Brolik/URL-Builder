@@ -1,19 +1,18 @@
 <div class="home">
-    <div class="centered clearfix">
+    <div class="clearfix">
         <div class="container">
-            <h2>Campaign URL Builder</h2>
-
             <form>
                 <section ng-repeat="field in fields">
                     <div ng-switch="field.type">
                         <div ng-switch-when="input">
-                            <input type="text" ng-model="field.model" required="field.required" />
+                            <input type="text" required="field.required" />
                         </div>
-                        <div ng-switch-when="select">
-                            <select ng-model="field.model" ng-switch="field.model">
-                                {{field.model}}
-                                <option ng-switch-when="source" ng-repeat="source in sources">{{source.title}}</option>
-                                <option ng-switch-when="medium" ng-repeat="medium in mediums">{{medium.title}}</option>
+                        <div ng-switch-when="select" ng-switch="field.model">
+                            <select ng-switch-when="source" required="field.required">
+                                <option ng-repeat="source in sources" value="{{source.value}}">{{source.title}}</option>
+                            </select>
+                            <select ng-switch-when="medium" required="field.required">
+                                <option ng-repeat="medium in mediums" value="{{medium.value}}">{{medium.title}}</option>
                             </select>
                         </div>
                     </div>
@@ -21,17 +20,24 @@
             </form>
         </div>
         <div class="directions">
-            <h3>Directions</h3>
-
-            <section>
+            <section ng-repeat="field in fields">
                 <div class="clearfix">
-                    <div class="two columns"><h3 class="circle required">1</h3></div>
+                    <div class="two columns" ng-switch='field.required'>
+                        <h3 ng-switch-when="true" class="circle required">{{$index + 1}}</h3>
+                        <h3 ng-switch-when="false" class="circle">{{$index + 1}}</h3>
+                    </div>
                     <div class="fourteen columns">
-                        <h3 class="littleMargin">Campaign URL</h3>
-                        <span class="links"><a href="#">Help</a> | <a href="#">Custom</a></span>
+                        <h3 class="littleMargin">{{field.title}}</h3>
+                        <span class="links">
+                            <button ng-click="toggleModal('help', field.model)">Help</button> |
+                            <a href="#">Custom</a>
+                        </span>
                     </div>
                 </div>
             </section>
         </div>
     </div>
 </div>
+
+<button ng-click="toggleModal('help','URL')">Open</button>
+<!-- <button ng-click="toggleModal('add','addMedium')">Open</button> -->
