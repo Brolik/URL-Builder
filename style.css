@@ -114,65 +114,81 @@ li { font-size: 1.125em; line-height: 1.5em; letter-spacing: 0; }
 
 /* == Font Icons ============================================= */
 /* == Global Site Styles ===================================== */
-/* line 2, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_global.scss */
+/* line 10, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_global.scss */
 body { margin: 0; background-color: #e5f8fd; }
 
-/* line 7, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_global.scss */
+/* line 15, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_global.scss */
 a { text-decoration: none; }
-/* line 9, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_global.scss */
+/* line 17, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_global.scss */
 a:active, a:hover { outline: none; }
 
-/* line 16, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_global.scss */
+/* line 24, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_global.scss */
 h1, h2, h3, h4, h5, h6 { margin: 0; }
 
-/* line 20, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_global.scss */
+/* line 28, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_global.scss */
 h1 { font-size: 60px; }
 
-/* line 24, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_global.scss */
+/* line 32, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_global.scss */
 h2 { font-size: 26px; margin-bottom: 25px; }
 
-/* line 29, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_global.scss */
+/* line 37, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_global.scss */
 h3 { font-size: 24px; padding: 1px 0; margin-bottom: 25px; }
 
-/* line 42, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_global.scss */
+/* line 50, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_global.scss */
 .centered { margin: 0 auto; max-width: 1400px; }
 
-/* line 51, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_global.scss */
+/* line 59, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_global.scss */
 header { margin: 5% 0 3% 0; }
-/* line 54, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_global.scss */
+/* line 62, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_global.scss */
 header h1 { margin-left: 10%; font-weight: 600; text-shadow: #e0e0e0 1px 1px 0px; }
 
 /* == Padding ================================================ */
-/* line 62, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_global.scss */
+/* line 70, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_global.scss */
 .left { padding-left: 2.5%; }
 
-/* line 66, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_global.scss */
+/* line 74, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_global.scss */
 .leftNarrow { padding-left: 1.5%; }
 
-/* line 70, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_global.scss */
+/* line 78, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_global.scss */
 .right { padding-right: 2.5%; }
 
-/* line 74, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_global.scss */
+/* line 82, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_global.scss */
 .rightNarrow { padding-right: 1.5%; }
 
+/* == Dialog Window ========================================== */
+/* line 88, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_global.scss */
+.ng-modal { position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
+/* line 94, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_global.scss */
+.ng-modal .ng-modal-overlay { position: absolute; top: 0; right: 0; bottom: 0; left: 0; background-color: rgba(0, 0, 0, 0.25); height: 100%; width: 100%; z-index: 100; }
+/* line 105, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_global.scss */
+.ng-modal .ng-modal-dialog { position: relative; width: 50%; background-color: white; z-index: 110; margin: 0 auto; padding: 2%; border: 1px solid #bcbcbc; position: relative; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); -webkit-box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.35); -moz-box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.35); box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.35); }
+/* line 117, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_global.scss */
+.ng-modal .ng-modal-dialog h2 { margin-top: 25px; padding-bottom: 10px; border-bottom: 1px solid #bcbcbc; }
+/* line 122, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_global.scss */
+.ng-modal .ng-modal-dialog p { line-height: 1.25em; }
+/* line 126, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_global.scss */
+.ng-modal .ng-modal-close { position: absolute; top: 0; right: 0; padding: 10px; border: 1px solid #bcbcbc; margin: 5px; font-weight: 600; cursor: pointer; background-color: #fbfbfb; -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1); -moz-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1); box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1); }
+/* line 138, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_global.scss */
+.ng-modal .ng-modal-close:hover { -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0); -moz-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0); box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0); }
+
 /* == /#/Home ================================================ */
-/* line 15, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+/* line 3, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
 .home section { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 15px; width: 100%; height: 80px; border-bottom: 1px dotted #bcbcbc; }
-/* line 24, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+/* line 12, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
 .home .container { -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; position: relative; float: left; margin-left: 10%; padding: 20px; width: 65%; border: 1px solid #bcbcbc; background-color: #fbfbfb; }
-/* line 37, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+/* line 25, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
 .home .container section div { height: 100%; display: block; }
-/* line 41, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+/* line 29, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
 .home .container section input { margin: 0; margin-left: 1%; padding: 5px 15px; width: 95%; height: 100%; font-size: 20px; }
-/* line 51, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+/* line 39, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
 .home .directions { color: #474747; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; position: relative; float: left; padding: 20px; width: 25%; border: 1px solid rgba(0, 0, 0, 0); }
-/* line 62, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+/* line 50, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
 .home .directions .circle { -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; color: #474747; margin: 0; padding: 1% 1% 1.5%; width: 25px; height: 25px; border: 2px solid #474747; text-align: center; font-weight: 600; }
-/* line 73, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+/* line 61, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
 .home .directions .circle.required { color: #d10101; border-color: #d10101; }
-/* line 78, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+/* line 66, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
 .home .directions .links { padding-left: 5px; }
-/* line 81, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+/* line 69, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
 .home .directions .littleMargin { margin-bottom: 10px; }
 
 @media (max-width: 1550px) { /* line 3, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_responsive.scss */

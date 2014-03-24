@@ -6,7 +6,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
     <script data-require="ng-route@*" data-semver="1.2.0" src="http://code.angularjs.org/1.2.0-rc.3/angular-route.js"></script>
-    <script src="js/app.js"></script>
+    <script type="text/javascript"src="js/app.js"></script>
     <script type="text/javascript" src="js/directives.js"></script>
 
     <link rel="stylesheet" type="text/css" href="style.css" />
@@ -14,8 +14,8 @@
 <body ng-app="builder" ng-controller="mainCtrl">
     <!-- Dialog Window -->
     <modal-dialog show="modalShown">
-        <h2>{{dialogTitle}}</h2>
-        <p ng-bind-html="dialogContent"></p>
+        <h2 ng-bind-html="dialogTitle"></h2>
+        <div ng-bind-html="dialogContent"></div>
     </modal-dialog>
     <!-- // Dialog -->
 
@@ -29,6 +29,7 @@
    </div>
 
 
-
+    <button ng-click="toggleModal('help','url')">Open</button>
+    <!-- <button ng-click="toggleModal('add','addMedium')">Open</button> -->
 </body>
 </html>

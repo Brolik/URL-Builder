@@ -7,8 +7,7 @@ builder.config(['$routeProvider', function($routeProvider) {
             controller: 'helpCtrl'
         }).
         when('/', {
-            templateUrl: 'views/form.html',
-            controller: 'mainCtrl'
+            templateUrl: 'views/form.html'
         }).
         otherwise({
             redirectTo: '/'
@@ -21,7 +20,6 @@ builder.controller('mainCtrl', ['$scope','$http','$sce', function($scope,$http, 
     $scope.modalShow = false;
     $scope.toggleModal = function (type, content) {
         $scope.modalShown = !$scope.modalShown;
-
         if(type === 'help') {
             var httpRequest = $http({
                 method: 'POST',

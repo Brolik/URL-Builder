@@ -1,3 +1,11 @@
+@mixin vertical-align {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
 /* == Global Site Styles ===================================== */
 body {
     margin: 0;
@@ -73,4 +81,62 @@ header {
 
 .rightNarrow {
     padding-right: 1.5%;
+}
+
+
+/* == Dialog Window ========================================== */
+.ng-modal {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    .ng-modal-overlay {
+        position:absolute;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        background-color:rgba(0,0,0,.25);
+        height:100%;
+        width:100%;
+        z-index:100;
+    }
+    .ng-modal-dialog {
+        position:relative;
+        width:50%;
+        background-color:$white;
+        z-index:110;
+        margin:0 auto;
+        padding:2%;
+        border:1px solid #bcbcbc;
+
+        @include vertical-align();
+        @include box-shadow(3px 3px 5px 2px rgba(0,0,0,.35));
+
+        h2 {
+            margin-top:25px;
+            padding-bottom:10px;
+            border-bottom:1px solid #bcbcbc;
+        }
+        p {
+            line-height:1.25em;
+        }
+    }
+    .ng-modal-close {
+        position:absolute;
+        top:0;
+        right:0;
+        padding:10px;
+        border:1px solid #bcbcbc;
+        margin:5px;
+        font-weight:600;
+        cursor:pointer;
+        background-color:#fbfbfb;
+        @include box-shadow(1px 1px 1px 1px rgba(0,0,0,.10));
+
+        &:hover{
+            @include box-shadow(1px 1px 1px 1px rgba(0,0,0,0));
+        }
+    }
 }
