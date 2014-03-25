@@ -15,6 +15,8 @@ builder.config(['$routeProvider', function($routeProvider) {
 }]);
 
 builder.controller('mainCtrl', ['$scope','$http','$sce', function($scope,$http, $sce) {
+    $scope.urlPart = {};
+    $scope.generated = "";
 
     // Handle the popup.
     $scope.modalShow = false;
@@ -43,12 +45,64 @@ builder.controller('mainCtrl', ['$scope','$http','$sce', function($scope,$http, 
         }
     };
 
+    $scope.validateData = function () {
+        console.log('do something');
+    };
+
+    $scope.generate = function () {
+        var generatedURL = "";
+
+        // URL
+        if($scope.urlPart.url) {
+            if($scope.urlPart.url.substr(0,4) != 'http') {
+                generatedURL = "http://";
+            }
+            generatedURL = generatedURL + $scope.urlPart.url;
+        } else {
+            return false;
+        }
+
+        // Source
+        if($scope.urlPart.source) {
+            generatedURL = generatedURL + "?utm_source=" + $scope.urlPart.source;
+        }
+
+        // Medium
+        if($scope.urlPart.medium) {
+            generatedURL = generatedURL + "&utm_medium=" + $scope.urlPart.medium;
+        }
+
+        // Keywords
+        if($scope.urlPart.term) {
+            if($scope.urlPart.medium === "bing") {
+                generatedURL = generatedURL + "&utm_term=" + $scope.urlPart.term;
+            } else {
+                generatedURL = generatedURL + "&utm_term=" + encodeURIComponent($scope.urlPart.term);
+            }
+        }
+
+        // Content
+        if($scope.urlPart.content) {
+            generatedURL = generatedURL + "&utm_content=" + encodeURIComponent($scope.urlPart.term);
+        }
+
+        // Name
+        if($scope.urlPart.campaign) {
+            generatedURL = generatedURL + "&utm_campaign=" + encodeURIComponent($scope.urlPart.campaign);
+        }
+
+        // Return the generated URL
+        console.log(generatedURL);
+        $scope.generated = generatedURL;
+
+    };
+
     // Display each of the fields
     $scope.fields = [
         { type: 'input' , title: 'Campaign URL', required: true, model: 'url', custom: false },
         { type: 'select', title: 'Campaign Source', required: true, model: 'source', custom: true },
         { type: 'select', title: 'Campaign Medium', required: true, model: 'medium', custom: true },
-        { type: 'input',  title: 'Campaign Name' , required: true, model: 'campaign', cusom: false },
+        { type: 'input',  title: 'Campaign Name' , required: true, model: 'campaign', custom: false },
         { type: 'input',  title: 'Campaign Term', required: false, model: 'term', custom: false },
         { type: 'input',  title: 'Campaign Content', required: false, model: 'content', custom: false }
     ];

@@ -161,7 +161,7 @@ header h1 { margin-left: 10%; font-weight: 600; text-shadow: #e0e0e0 1px 1px 0px
 /* line 94, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_global.scss */
 .ng-modal .ng-modal-overlay { position: absolute; top: 0; right: 0; bottom: 0; left: 0; background-color: rgba(0, 0, 0, 0.25); height: 100%; width: 100%; z-index: 100; }
 /* line 105, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_global.scss */
-.ng-modal .ng-modal-dialog { position: relative; width: 50%; background-color: white; z-index: 110; margin: 0 auto; padding: 2%; border: 1px solid #bcbcbc; position: relative; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); -webkit-box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.35); -moz-box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.35); box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.35); }
+.ng-modal .ng-modal-dialog { position: relative; width: 50%; background-color: white; z-index: 110; margin: 0 auto; padding: 2%; border: 1px solid #bcbcbc; position: relative; top: 40%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); -webkit-box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.35); -moz-box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.35); box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.35); }
 /* line 117, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_global.scss */
 .ng-modal .ng-modal-dialog h2 { margin-top: 25px; padding-bottom: 10px; border-bottom: 1px solid #bcbcbc; }
 /* line 122, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_global.scss */
@@ -174,21 +174,25 @@ header h1 { margin-left: 10%; font-weight: 600; text-shadow: #e0e0e0 1px 1px 0px
 /* == /#/Home ================================================ */
 /* line 3, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
 .home section { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 15px; width: 100%; height: 80px; border-bottom: 1px dotted #bcbcbc; }
-/* line 12, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+/* line 11, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+.home section.generated { border-bottom: none; }
+/* line 16, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
 .home .container { -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; position: relative; float: left; margin-left: 10%; padding: 20px; width: 65%; border: 1px solid #bcbcbc; background-color: #fbfbfb; }
-/* line 25, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
-.home .container section div { height: 100%; display: block; }
 /* line 29, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+.home .container section div { height: 100%; display: block; }
+/* line 33, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
 .home .container section input { margin: 0; margin-left: 1%; padding: 5px 15px; width: 95%; height: 100%; font-size: 20px; }
-/* line 39, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+/* line 42, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+.home .container section input.ng-dirty.ng-invalid { border-color: #d10101; }
+/* line 49, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
 .home .directions { color: #474747; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; position: relative; float: left; padding: 20px; width: 25%; border: 1px solid rgba(0, 0, 0, 0); }
-/* line 50, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+/* line 60, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
 .home .directions .circle { -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; color: #474747; margin: 0; padding: 1% 1% 1.5%; width: 25px; height: 25px; border: 2px solid #474747; text-align: center; font-weight: 600; }
-/* line 61, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+/* line 71, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
 .home .directions .circle.required { color: #d10101; border-color: #d10101; }
-/* line 66, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+/* line 76, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
 .home .directions .links { padding-left: 5px; }
-/* line 69, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
+/* line 79, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_pages.scss */
 .home .directions .littleMargin { margin-bottom: 10px; }
 
 @media (max-width: 1550px) { /* line 3, /Users/kylejasso/Desktop/Brolik/DS-Link-Builder/sass/_responsive.scss */

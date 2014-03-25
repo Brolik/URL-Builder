@@ -1,21 +1,28 @@
 <div class="home">
     <div class="clearfix">
         <div class="container">
-            <form>
+            <form name="urlData" novalidate ng-controller="mainCtrl">
                 <section ng-repeat="field in fields">
-                    <div ng-switch="field.type">
-                        <div ng-switch-when="input">
-                            <input type="text" required="field.required" />
+                        <ng-form name="urlData">
+                        <div ng-switch="field.type">
+                            <div ng-switch-when="input">
+                                <input type="text" name="{{field.model}}" ng-required="field.required" ng-model="urlPart[field.model]" valid-blur="validateDatea()" />
+                            </div>
+                            <div ng-switch-when="select" ng-switch="field.model">
+                                <select ng-switch-when="source" required="field.required" ng-model="urlPart[field.model]">
+                                    <option ng-repeat="source in sources" value="{{source.value}}">{{source.title}}</option>
+                                </select>
+                                <select ng-switch-when="medium" required="field.required" ng-model="urlPart[field.model]">
+                                    <option ng-repeat="medium in mediums" value="{{medium.value}}">{{medium.title}}</option>
+                                </select>
+                            </div>
                         </div>
-                        <div ng-switch-when="select" ng-switch="field.model">
-                            <select ng-switch-when="source" required="field.required">
-                                <option ng-repeat="source in sources" value="{{source.value}}">{{source.title}}</option>
-                            </select>
-                            <select ng-switch-when="medium" required="field.required">
-                                <option ng-repeat="medium in mediums" value="{{medium.value}}">{{medium.title}}</option>
-                            </select>
-                        </div>
-                    </div>
+                    </ng-form>
+                </section>
+
+                <section class="generated">
+                    <button ng-click="generate(urlData)" ng-disabled="!urlData.$valid">Generate URL</button>
+                    <div class="generated">{{generated}}</div>
                 </section>
             </form>
         </div>
@@ -29,8 +36,8 @@
                     <div class="fourteen columns">
                         <h3 class="littleMargin">{{field.title}}</h3>
                         <span class="links">
-                            <button ng-click="toggleModal('help', field.model)">Help</button> |
-                            <a href="#">Custom</a>
+                            <button ng-click="toggleModal('help', field.model)">Help</button>
+                            <button ng-if="field.custom" ng-click="">Custom</button>
                         </span>
                     </div>
                 </div>
@@ -38,6 +45,3 @@
         </div>
     </div>
 </div>
-
-<button ng-click="toggleModal('help','URL')">Open</button>
-<!-- <button ng-click="toggleModal('add','addMedium')">Open</button> -->
