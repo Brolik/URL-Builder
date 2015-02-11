@@ -285,52 +285,52 @@ a:active, a:hover { outline: none; }
 h1, h2, h3, h4, h5, h6 { margin: 0; }
 
 /* line 27, sass/_global.scss */
-h1 { font-size: 60px; }
+h1 { font-size: 60px; margin: 20px 0px; }
 
-/* line 31, sass/_global.scss */
+/* line 32, sass/_global.scss */
 h2 { font-size: 26px; margin-bottom: 25px; }
 
-/* line 36, sass/_global.scss */
+/* line 37, sass/_global.scss */
 h3 { font-size: 24px; padding: 1px 0; margin-bottom: 25px; }
 
-/* line 49, sass/_global.scss */
+/* line 50, sass/_global.scss */
 .centered { margin: 0 auto; max-width: 1400px; }
 
-/* line 58, sass/_global.scss */
+/* line 59, sass/_global.scss */
 header { margin: 5% 0 3% 0; }
-/* line 61, sass/_global.scss */
+/* line 62, sass/_global.scss */
 header h1 { margin-left: 10%; font-weight: 600; text-shadow: #e0e0e0 1px 1px 0px; }
 
 /* == Padding ================================================ */
-/* line 69, sass/_global.scss */
+/* line 70, sass/_global.scss */
 .left { padding-left: 2.5%; }
 
-/* line 73, sass/_global.scss */
+/* line 74, sass/_global.scss */
 .leftNarrow { padding-left: 1.5%; }
 
-/* line 77, sass/_global.scss */
+/* line 78, sass/_global.scss */
 .right { padding-right: 2.5%; }
 
-/* line 81, sass/_global.scss */
+/* line 82, sass/_global.scss */
 .rightNarrow { padding-right: 1.5%; }
 
 /* == Dialog Window ========================================== */
-/* line 87, sass/_global.scss */
+/* line 88, sass/_global.scss */
 .ng-modal { position: absolute; top: 0; right: 0; bottom: 0; left: 0; /*
 parent div of help box must have a set height and width so that 
 relative positioning can work in webkit browsers.
 */ height: 100%; width: 100%; }
-/* line 99, sass/_global.scss */
+/* line 100, sass/_global.scss */
 .ng-modal .ng-modal-overlay { position: absolute; top: 0; right: 0; bottom: 0; left: 0; background-color: rgba(0, 0, 0, 0.25); height: 100%; width: 100%; z-index: 100; }
-/* line 110, sass/_global.scss */
+/* line 111, sass/_global.scss */
 .ng-modal .ng-modal-dialog { position: relative; width: 50%; background-color: #ffffff; z-index: 110; margin: 0 auto; padding: 2%; border: 1px solid #bcbcbc; position: relative; top: 40%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); -moz-box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.35); -webkit-box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.35); box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.35); }
-/* line 122, sass/_global.scss */
+/* line 123, sass/_global.scss */
 .ng-modal .ng-modal-dialog h2 { margin-top: 25px; padding-bottom: 10px; border-bottom: 1px solid #bcbcbc; }
-/* line 127, sass/_global.scss */
+/* line 128, sass/_global.scss */
 .ng-modal .ng-modal-dialog p { line-height: 1.25em; }
-/* line 131, sass/_global.scss */
+/* line 132, sass/_global.scss */
 .ng-modal .ng-modal-close { position: absolute; top: 0; right: 0; padding: 10px; border: 1px solid #bcbcbc; margin: 5px; font-weight: 600; cursor: pointer; background-color: #fbfbfb; -moz-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1); box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1); }
-/* line 143, sass/_global.scss */
+/* line 144, sass/_global.scss */
 .ng-modal .ng-modal-close:hover { -moz-box-shadow: 1px 1px 1px 1px transparent; -webkit-box-shadow: 1px 1px 1px 1px transparent; box-shadow: 1px 1px 1px 1px transparent; }
 
 /* line 12, sass/_pages.scss */
