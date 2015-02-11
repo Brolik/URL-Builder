@@ -1,0 +1,908 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"state",
+				"stateProvide"
+			],
+			[
+				"get",
+				"getStateData"
+			],
+			[
+				"getState",
+				"getStateData"
+			],
+			[
+				"va",
+				"value"
+			],
+			[
+				"selec",
+				"selected"
+			],
+			[
+				"index",
+				"indexOf(${0:searchElement})	Array"
+			],
+			[
+				"j",
+				"jQuery"
+			],
+			[
+				"use",
+				"useCSVFile"
+			],
+			[
+				"csv",
+				"csvAsArray"
+			],
+			[
+				"jquery",
+				"jQueryCSVLibrary"
+			],
+			[
+				"jQuery",
+				"jQueryCSVLibrary"
+			],
+			[
+				"set",
+				"setUpCSV"
+			],
+			[
+				"on",
+				"onclick"
+			],
+			[
+				"glo",
+				"globalRadiusTravel"
+			],
+			[
+				"wtr-g",
+				"wtr-gray-body-text-color"
+			],
+			[
+				"wtr-b",
+				"wtr-gray-body-text-color"
+			],
+			[
+				"slide",
+				"slideDown"
+			],
+			[
+				"question",
+				"questionDropdown"
+			],
+			[
+				"child",
+				"hasChildNodes()	Node"
+			],
+			[
+				"visi",
+				"visible"
+			],
+			[
+				"actove",
+				"style.animationDirection = 'reverse'	Style CSS"
+			],
+			[
+				"active",
+				"activeElement	Document"
+			],
+			[
+				"getE",
+				"getElementsByClassName(${0:names})	Element"
+			],
+			[
+				"transition",
+				"transition-property"
+			],
+			[
+				"cross",
+				"crossVr"
+			],
+			[
+				"trans",
+				"transform"
+			],
+			[
+				"wtr",
+				"wtr-sideNav-gray"
+			],
+			[
+				"add",
+				"addClass"
+			],
+			[
+				"wtr-",
+				"wtr-dark-blue"
+			],
+			[
+				"wtr-light",
+				"wtr-light-gray"
+			],
+			[
+				"tras",
+				"transition"
+			],
+			[
+				"back",
+				"backface-visibility"
+			],
+			[
+				"ease",
+				"ease-in"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"boxed",
+				"boxed-heading"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"ob",
+				"ob_start"
+			],
+			[
+				"cate",
+				"categoryID"
+			],
+			[
+				"service",
+				"serviceResults"
+			],
+			[
+				"com",
+				"comOutreach"
+			],
+			[
+				"content",
+				"contentResults"
+			],
+			[
+				"news",
+				"newsResults"
+			],
+			[
+				"sysm",
+				"symposiums"
+			],
+			[
+				"exe",
+				"executives"
+			],
+			[
+				"Ti",
+				"TINYINT"
+			],
+			[
+				"button",
+				"button-new"
+			],
+			[
+				"D",
+				"DATETIME"
+			],
+			[
+				"_",
+				"_SITE"
+			],
+			[
+				"bottom",
+				"bottomSpace"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"float",
+				"floatRight"
+			],
+			[
+				"check",
+				"checklist"
+			],
+			[
+				"texta",
+				"text-align"
+			],
+			[
+				"center",
+				"centertext"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"padding",
+				"padding-left"
+			],
+			[
+				"text",
+				"textarea"
+			],
+			[
+				"left",
+				"leftInnerDiv"
+			],
+			[
+				"form",
+				"formDivs"
+			],
+			[
+				"right",
+				"rightDiv"
+			],
+			[
+				"main",
+				"mainH1"
+			],
+			[
+				"header",
+				"headerText"
+			],
+			[
+				"medi",
+				"mediagallery"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"Click",
+				"Clickitclam"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"width",
+				"width455"
+			],
+			[
+				"clear",
+				"clearfix"
+			],
+			[
+				"can",
+				"cancelAccount"
+			],
+			[
+				"ce",
+				"centered"
+			],
+			[
+				"wi",
+				"width700"
+			],
+			[
+				"t",
+				"tbody	Tag"
+			],
+			[
+				"head",
+				"header	Tag"
+			],
+			[
+				"ca",
+				"category"
+			],
+			[
+				"a",
+				"array	$… = array (…)"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 6664,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sass/_global.scss",
+			"settings":
+			{
+				"buffer_size": 581,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Compass/Compass.sublime-build",
+	"command_palette":
+	{
+		"height": 87.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"lori",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"lor",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"lo",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"lorium",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"listpa",
+				"Package Control: List Packages"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 287.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/nico/Desktop/Brolik/NXT/app/csvToArray.v2.1.min.js",
+		"/Users/nico/Desktop/Brolik/NXT/index.php",
+		"/Users/nico/Desktop/Brolik/NXT/app/jquery.csv-0.71.js",
+		"/Users/nico/Desktop/Brolik/NXT/app/views/map.php",
+		"/Users/nico/Desktop/Brolik/NXT/app/sass/_global.scss",
+		"/Users/nico/Desktop/Brolik/NXT/app/brolik.epcsReadiness.js",
+		"/Users/nico/Desktop/Brolik/NXT/app/sass/framework/_framework.scss",
+		"/Users/nico/Desktop/Brolik/NXT/app/sass/_responsive.scss",
+		"/Users/nico/Desktop/Brolik/NXT/app/sass/epcs.style.scss",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/admin/examples.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/admin/locations-location.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/admin/onlineBooking-content.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/admin/qualityControl-content.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/technology.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/admin/index.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/tickets.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/vacation-travel.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/meetings-incentives.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/admin/comOutreach-content.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/admin/news-content.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/admin/executiveTeam-content.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/news.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/symposiums.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/admin/symposiums-pastSymposiums.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/admin/symposiums-content.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/sass/_global.scss",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/admin/executiveTeam-listOfExecutives.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/admin/home-modules.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/admin/home-content.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/admin/about-content.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/admin/about-modules.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/admin/slidecontent.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/about.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/index.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/sass/_pages.scss",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/contact.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/footer.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/videos.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/sass/vendor/video-js.css",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/header.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/calendar.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/world-mobile.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/online-booking.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/locations.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/careers.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/vacations.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/cruises.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/travel-resources.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/js/jquery.allPages.js",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/history.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/executive-team.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/community-outreach.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/global-radius-travel.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/risk-management.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/quality-control.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/world-portals.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/world-reports.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/.gitignore",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/WTR-DB.sql",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/services.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/corporate-travel.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/calendar-event.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/menus/contactMenu.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/menus/eventsMenu.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/menus/blogMenu.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/menus/servicesMenu.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/sass/style.scss",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/lib/settings.php",
+		"/Users/nico/Downloads/glyph_mail_white.png",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/sass/framework/_framework.scss",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/menus/resourcesMenu.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/menus/privacyMenu.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/menus/technologyMenu.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/menus/aboutMenu.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/sass/vendor/hover.css",
+		"/Users/nico/Downloads/Hover-master/css/hover.css",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/community-outreach-single.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/admin/header.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/admin/footer.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/admin/lib/functions.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/GBTA.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/database.sql",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/blog-article.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/blog.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/article.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/upcoming-event.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/database.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/privacy.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/media.css",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/sass-new/framework/_framework.scss",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/lib/local.settings.php",
+		"/Users/nico/Desktop/Brolik/WTR-WorldTravel/.htaccess",
+		"/Users/nico/Desktop/Brolik/jtpl-clickit/sass/framework/_framework.scss",
+		"/Users/nico/Desktop/Brolik/jtpl-clickit/sass/_pages.scss",
+		"/Users/nico/Desktop/Brolik/jtpl-clickit/sass/_global.scss",
+		"/Users/nico/Desktop/Brolik/jtpl-clickit/sass/style.scss",
+		"/Users/nico/Desktop/Brolik/jtpl-clickit/clickitclam.php",
+		"/Users/nico/Desktop/Brolik/jtpl-clickit/index.php",
+		"/Users/nico/Desktop/Brolik/jtpl-clickit/header.php",
+		"/Users/nico/Desktop/Brolik/jtpl-clickit/footer.php",
+		"/Users/nico/Desktop/Brolik/jtpl-clickit/lib/local.settings.php",
+		"/Users/nico/Desktop/Brolik/52Weeks/views/emails.html",
+		"/Users/nico/Desktop/Brolik/52Weeks/views/email/emails.html",
+		"/Users/nico/Desktop/Brolik/52Weeks/views/partials/temp.header.html",
+		"/Users/nico/Desktop/Brolik/52Weeks/views/partials/temp.secureHeader.html",
+		"/Users/nico/Desktop/Brolik/52Weeks/views/emails",
+		"/Users/nico/Desktop/Brolik/52Weeks/views/cancel.html",
+		"/Users/nico/Desktop/Brolik/52Weeks/sass/_global.scss",
+		"/Users/nico/Desktop/Brolik/52Weeks/style.css",
+		"/Users/nico/Desktop/Brolik/52Weeks/sass/_pages.scss",
+		"/Users/nico/Desktop/Brolik/52Weeks/sass/_responsive.scss",
+		"/Users/nico/Desktop/Brolik/52Weeks/views/signup.html",
+		"/Users/nico/Desktop/Brolik/52Weeks/views/updateBankInfo.html",
+		"/Users/nico/Desktop/Brolik/52Weeks/views/updatePassword.html",
+		"/Users/nico/Desktop/Brolik/52Weeks/views/updateEmail.html",
+		"/Users/nico/Desktop/Brolik/52Weeks/views/signin.html",
+		"/Users/nico/Desktop/Brolik/52Weeks/views/profile.html",
+		"/Users/nico/Desktop/Brolik/52Weeks/views/contact.html",
+		"/Users/nico/Desktop/Brolik/52Weeks/views/history.html",
+		"/Users/nico/Desktop/Brolik/52Weeks/views/change_password.html",
+		"/Users/nico/Desktop/Brolik/52Weeks/views/change_email.html",
+		"/Users/nico/Desktop/Brolik/52Weeks/sass/vendor/_videogular.scss",
+		"/Users/nico/Desktop/Brolik/52Weeks/sass/style.scss",
+		"/Users/nico/Desktop/Brolik/52Weeks/app/controllers.js",
+		"/Users/nico/Desktop/Brolik/52Weeks/api/handle.php",
+		"/Users/nico/Desktop/Brolik/52Weeks/index.html",
+		"/Users/nico/Desktop/Brolik/52Weeks/api/config.php",
+		"/Users/nico/Desktop/Brolik/RFG-Rehab-Financial/RFG-Email.html"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"rSep",
+			"getLevelMessage",
+			"content",
+			".sm-btm-brder",
+			"top",
+			"sm-btm",
+			"content",
+			"slide",
+			"slide to top",
+			"slide to tp",
+			"button",
+			"com",
+			"WTR_site",
+			"mydb",
+			"45",
+			"Blob",
+			"display: block",
+			"div",
+			"logo",
+			"spacer",
+			"account",
+			"div",
+			"button",
+			"account",
+			"account-navigation",
+			"nav",
+			"one-third",
+			".account",
+			".column",
+			".clearfix",
+			"<br />",
+			"form",
+			".button",
+			"button",
+			"button warning",
+			"warning",
+			"check",
+			"checkActive",
+			"label",
+			"<br />",
+			"</br>",
+			"nine",
+			"ng",
+			"centered clear",
+			"input {\n        width: 50%; \n    }",
+			"everything",
+			"ingChapters' ",
+			" \n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"a",
+			"WTR_Site",
+			"WTR_site",
+			"255",
+			"TEXT"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 6664,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "sass/_global.scss",
+					"settings":
+					{
+						"buffer_size": 581,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								538,
+								538
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 121.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 306.0,
+	"status_bar_visible": true
+}

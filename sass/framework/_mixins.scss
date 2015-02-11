@@ -115,7 +115,7 @@
 }
 
 // == CSS3 Buttons =========================================== */
-	// In Development
+    // In Development
 
 @mixin text-color($base_color) {
     @if lightness($base_color) > 60% {
