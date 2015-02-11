@@ -1,0 +1,61 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic,400italic,600italic);
+
+/* == Typography ============================================= */
+body {
+    font-family:$font-base-family;
+    font-size:$font-base-percentage;
+    line-height:$base-line-height;
+    letter-spacing:$base-letter-spacing;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family:$font-heading-family;
+}
+h1 {
+  font-size:1.75em;
+  color:#65c2ed;
+}
+
+h2 {
+  font-size:1.75em;
+  line-height:1.125em;
+  font-weight:lighter;
+  margin:20px 0;
+}
+h3 {
+  font-size:1.5em;
+  font-weight:lighter;
+  line-height:1.125em;
+  strong {
+    font-weight:500;
+  }
+  em {
+    font-style:italic;
+  }
+}
+
+h4 {
+  font-size:1.25em;
+  font-weight:500;
+  font-style:italic;
+}
+
+h5 {
+  font-size:1.125em;
+  font-weight:600;
+  font-style:italic;
+}
+
+p {
+  font-size:1.125em;
+  line-height:1.5em;
+  letter-spacing: 0;
+}
+li {
+  font-size:1.125em;
+  line-height:1.5em;
+  letter-spacing: 0;
+}
+
+/* == Font Icons ============================================= */

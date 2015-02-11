@@ -1,0 +1,53 @@
+@import "compass";
+
+// =========================================================== */
+// == Variables ============================================== */
+// =========================================================== */
+
+    // Fonts & typography
+    $font-base-size: 16px;
+    $font-base-line-height: 30px;
+    $font-base-family: 'Source Sans Pro', Helvetica, sans-serif;
+    $font-heading-family:  'Source Sans Pro', Helvetica, sans-serif;
+    $base-line-height:1em;
+    $base-letter-spacing:.025em;
+    $font-base-percentage: (($font-base-size / 16px) * 100) + 0%;
+
+    // Column System
+    $max-width: 1400px;
+    $columns: 16;
+    $column-width: $max-width/$columns;
+
+    // Color Scheme
+    $white: #ffffff;
+    $light: #f8f9f9;
+    $dark: #545f64;
+
+    $lightGray:#c5c5c5;
+    $red:#d10101;
+    $green:#1F9D52;
+    $blue:#65c2ed;
+
+    //Header Transition Variables
+    $headerDuration: 0.1s;
+    $headerEase: ease-in-out;
+
+    //Button, GrayBox Transition Variables
+    $buttonDuration: 0.2s;
+
+
+
+// == Vendor Pre-styles ====================================== */
+@import "vendor/select2.scss";
+
+// == Framework Styles ======================================= */
+@import "framework/mixins.scss";
+@import "framework/framework.scss";
+@import "framework/typography.scss";
+
+// == Layout Styles ========================================== */
+@import "global.scss";
+@import "pages.scss";
+@import "responsive.scss";
+
+

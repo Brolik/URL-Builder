@@ -1,0 +1,166 @@
+// == Functions ============================================== */
+@function ems($target, $context: $font-base) {
+    @if $target == 0 {
+        @return 0;
+    }
+    @return $target / $context + 0em;
+}
+
+@function percent($width, $container-width: $max-width) {
+    @return percentage($width / $container-width);
+}
+
+@function leading($amount: 1, $context: $font-base) {
+    @return ems($font-base-line-height * $amount, $context);
+}
+
+@function heading-line-height($size) {
+    $line-height: $font-base-line-height;
+    $match: false;
+    @while $match != true {
+        @if $size == $line-height {
+            $match: true;
+        }
+        @else if $size < $line-height {
+            $match: true;
+        }
+        @else if $size > $line-height {
+            $line-height: $line-height + $font-base-line-height;
+        }
+        @else {
+            $match: true;
+        }
+    }
+    @return $line-height / $size + 0em;
+}
+
+// == Retina Sprites ========================================= */
+@mixin background-retina($normal, $retina) {
+    background-image: image-url($normal);
+    @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+        background-image: image-url($retina);
+        background-size: image-width($retina) / 2 image-height($retina) / 2;
+    }
+}
+
+@mixin use-sprite($sprite) {
+    display: inline-block;
+    overflow: hidden;
+    width: image-width(sprite-file($icons, $sprite));
+    height: image-height(sprite-file($icons, $sprite));
+    background-image: sprite-url($icons);
+    background-position: sprite-position($icons, $sprite);
+    background-repeat: no-repeat;
+    @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+        width: image-width(sprite-file($icons-2x, $sprite)) / 2;
+        height: image-height(sprite-file($icons-2x, $sprite)) / 2;
+        background-image: sprite-url($icons-2x);
+        background-position: round(nth(sprite-position($icons-2x, $sprite), 1) / 2) round(nth(sprite-position($icons-2x, $sprite), 2) / 2);
+        background-size: image-width(sprite-path($icons-2x)) / 2 image-height(sprite-path($icons-2x)) / 2;
+    }
+}
+
+// == Leverage Columns ======================================= */
+@mixin LEV-calc($property, $expression) {
+    #{$property}: -moz-calc(#{$expression});
+    #{$property}: -o-calc(#{$expression});
+    #{$property}: -webkit-calc(#{$expression});
+    #{$property}: calc(#{$expression});
+}
+
+@mixin LEV-column($width: 100%, $marginLeft: 0px, $marginRight: 0px) {
+    // $widthMinusMargin: $width-marginLeft-marginRight;*/
+    @include col(16);
+    @include LEV-calc(width, $width + " - " + $marginLeft + " - " + $marginRight);
+    margin-left: $marginLeft;
+    margin-right: $marginRight;
+}
+
+// == Base Column system ===================================== */
+@mixin col($n, $container-width: $max-width) {
+    position: relative;
+    float: left;
+    width: percentage($n * $column-width / $container-width);
+    @include box-sizing(border-box);
+    margin: 0;
+}
+
+@mixin heading($size) {
+    font-size: ems($size);
+    line-height: heading-line-height($size);
+    margin-bottom: ems($font-base-line-height-half, $size);
+    padding-left: ems(15px);
+    text-transform: uppercase;
+}
+
+@mixin flatten-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+// == In-line Media Queries ================================== */
+@mixin mediaQuery($screen-size, $restrict: "max-width") {
+    @media only screen and ($restrict: $screen-size) {
+        @content;
+    }
+}
+
+// == Placeholder Text ======================================= */
+@mixin placeholderStyle {
+    ::-webkit-input-placeholder { @content; }
+    :-ms-input-placeholder { @content; }
+    ::-moz-placeholder { @content; }
+    :-moz-placeholder { @content; }
+}
+
+// == CSS3 Buttons =========================================== */
+	// In Development
+
+@mixin text-color($base_color) {
+    @if lightness($base_color) > 60% {
+        color:lighten(#333, lightness($base_color) / 5);
+        @if lightness($base_color) >= 90% {
+            text-shadow:#fff 0 1px 0;
+        } @else {
+            text-shadow: rgba(#fff, .2 + lightness($base_color) * .8 / 100) 0 1px 0;
+        }
+    } @else {
+        color:#fff;
+        text-shadow:rgba(0,0,0,.4) 0 1px 1px;
+    }
+}
+@mixin button-color($base_color,$color_change: 15%) {
+    @include background(linear-gradient(top, $base_color, darken($base_color, $color_change)));
+    background-color:$base_color;
+    @include text-color($base_color);
+
+    &:hover {
+        @include transition((all 0.5 ease-in-out));
+        @include background(linear-gradient(top,saturate($base_color,($color_change/2)),saturate($base_color,($color_change/2))));
+        @include text-shadow($base_color);
+        background-color: $base_color;
+
+        @include box-shadow((inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 2px 3px rgba(#000, .3 - .25 * lightness($base_color) / 100)));
+    }
+    &:active {
+        @include background(linear-gradient(top,darken($base_color,($color_change/2)),darken($base_color,($color_change/2))));
+        @include box-shadow(none);
+    }
+}
+
+@mixin button($color: #cccccc) {
+    *display:inline;
+    *zoom:1;
+    background-repeat: repeat-x;
+    text-align:center;
+    vertical-align:middle;
+    cursor:pointer;
+
+    @include border-radius(3px);
+    @include button-color($color);
+
+    &:hover {
+        //background-position: 0 -30px;
+    }
+}

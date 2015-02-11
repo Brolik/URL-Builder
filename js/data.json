@@ -1,0 +1,34 @@
+[{
+    "sections": [
+        {
+            "ID":"url",
+            "title":"<b>URL</b> <em>(required)</em>",
+            "content":"<p>Use the full landing page URL.</p> <p>Make sure there are no other link appendages included. (That means delete any question marks and all text following the question mark from the URL.)</p>"
+        },
+        {
+            "ID":"medium",
+            "title":"<b>Campaign Medium</b> <em>(required)</em>",
+            "content":"<p>Campaign medium is used to identify the type of source the user is coming from.</p><p>Typical options include various types of paid ads or referral sources. Similar to campaign source, the selected medium should be consistent with established Google Analytics mediums.</p><p>Important to note: Google Analytics deems all traffic referred by the medium \"cpc\" as paid search. As such, when running ads via social channels, it is a best practice to avoid using cpc and select from one of the other campaign medium options like cpm or cpa.</p><blockquote>Ex:<ul><li>utm_medium=cpm (reports in Analytics as \"Display\")</li><li>utm_medium=cpa (reports in Analytics as \"Other Advertising\")</li></ul></blockquote>"
+        },
+        {
+            "ID":"source",
+            "title":"<b>Campaign Source</b> <em>(required)</em>",
+            "content":"<p>Campaign source should be used to identify where a site visitor came from.</p><p>For consistent reporting from both utm parameters and natural Analytics tracking, the established Google Analytics source names should be used.</p><p>For example, Google Analytics reports Facebook traffic as \"facebook.com\" for source. Therefore when using custom campaign tracking on Facebook, use \"facebook.com\" as the campaign source parameter. This will allow us you monitor how Facebook is performing as a whole, in addition to how a particular campaign is performing on Facebook.</p>"
+        },
+        {
+            "ID":"campaign",
+            "title":"<b>Campaign Name</b> <em>(required)</em>",
+            "content":"<p>The campaign name parameter should be used to group many related ads (or pieces of content) together into a single marketing \"campaign\" within Analytics.</p><p>The campaign name parameter displays in Google Analytics the same way that the \"campaign name\" does from AdWords. As such, if there is a unique campaign running through a social network and AdWords, the campaign name parameter and the AdWords campaign name should match. </p><p>Campaign names need to be spelled the same everywhere, using identical capitalization across all tracking links. Analytics reporting is case sensitive, so any inconsistencies will create separate campaign reporting in Analytics.</p><p>Same goes for both utm campaign names and AdWord campaign names.</p>"
+        },
+        {
+            "ID":"term",
+            "title":"<b>Campaign Term</b> <em>(optional)</em>",
+            "content":"<p>The campaign term is most commonly used for search advertising to send keyword data from the search engine advertising into Google Analytics.</p><p>This happens automatically for AdWords if it is connected to the Analytics account.</p><p>For Bing ads, the campaign term parameter can be used to send keyword data to Analytics. In order to do so, \"{QueryString}\" must be used for the Campaign Term parameter. If Bing is selected as the campaign source when using the Campaign URL Builder, {QueryString} will automatically populate in the campaign term field.</p><p>Campaign term can also be used for segmentation reporting in Google Analytics. For example, if you segment ads running in Facebook by age range, the ranges can be entered into the campaign term field:</p><ul><li>utm_term=26-35</li><li>utm_term=36-45</li></ul>"
+        },
+        {
+            "ID":"content",
+            "title":"<b>Campaign Content</b> <em>(optional)</em>",
+            "content":"<p>The campaign content parameter is used to differentiate creative nuances.</p><p>If there are different creative approaches used over the course of a unique marketing campaign, it will be beneficial to separate them with different campaign content parameters, allowing for easy comparison between the two approaches.</p><blockquote>Ex:<ul><li>branded message<ul><li>utm_content=branded%20tagline</li></ul></li><li>non branded message<ul><li>utm_content=non%20branded%20tagline</li></ul></li></ul></blockquote>"
+        }
+    ]
+}]
