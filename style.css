@@ -377,39 +377,41 @@ relative positioning can work in webkit browsers.
 .rightColumn .wrap { position: relative; }
 /* line 110, sass/_pages.scss */
 .rightColumn .bingError { position: absolute; margin-left: 10px; color: #d10101; font-style: italic; font-size: 14px; }
-
-/* line 119, sass/_pages.scss */
-.offset-left { margin-left: 20%; }
+/* line 118, sass/_pages.scss */
+.rightColumn .help { cursor: pointer; }
 
 /* line 123, sass/_pages.scss */
+.offset-left { margin-left: 20%; }
+
+/* line 127, sass/_pages.scss */
 .row { position: relative; display: block; }
 
-/* line 128, sass/_pages.scss */
+/* line 132, sass/_pages.scss */
 .vertAlign { position: relative; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); display: block; height: 200px; }
 
-/* line 134, sass/_pages.scss */
+/* line 138, sass/_pages.scss */
 .custom { cursor: pointer; }
-/* line 136, sass/_pages.scss */
+/* line 140, sass/_pages.scss */
 .custom.close { position: absolute; top: 5px; right: 5px; }
 
-/* line 143, sass/_pages.scss */
+/* line 147, sass/_pages.scss */
 .showAdd { position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 40; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.4); }
-/* line 153, sass/_pages.scss */
+/* line 157, sass/_pages.scss */
 .showAdd label { display: block; }
-/* line 156, sass/_pages.scss */
+/* line 160, sass/_pages.scss */
 .showAdd input { position: relative; z-index: 60; display: block; margin: 10px 0; padding: 10px; width: 100%; height: auto; font-size: 18px; }
-/* line 166, sass/_pages.scss */
+/* line 170, sass/_pages.scss */
 .showAdd .showSource, .showAdd .showMedium { -moz-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.25); -webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.25); box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.25); position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 50; margin: auto; padding: 50px 35px; width: 350px; height: 200px; border: 2px soild #545f64; background: #ffffff; }
-/* line 181, sass/_pages.scss */
+/* line 185, sass/_pages.scss */
 .showAdd.animate-show, .showAdd.animate-hide { -webkit-transition: all linear 1s; -moz-transition: all linear 1s; -ms-transition: all linear 1s; -o-transition: all linear 1s; transition: all linear 1s; }
 
-/* line 190, sass/_pages.scss */
+/* line 194, sass/_pages.scss */
 button { *display: inline; *zoom: 1; background-repeat: repeat-x; text-align: center; vertical-align: middle; cursor: pointer; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzY1YzJlZCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzIxYTdlNSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='); background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #65c2ed), color-stop(100%, #21a7e5)); background: -moz-linear-gradient(top, #65c2ed, #21a7e5); background: -webkit-linear-gradient(top, #65c2ed, #21a7e5); background: linear-gradient(to bottom, #65c2ed, #21a7e5); background-color: #65c2ed; color: #555555; text-shadow: rgba(255, 255, 255, 0.7302) 0 1px 0; -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; padding: 20px; border: none; color: #fff; text-shadow: none; letter-spacing: 0.03em; font-size: 16px; font-family: 'Source Sans Pro', Helvetica, sans-serif; }
 /* line 138, sass/framework/_mixins.scss */
 button:hover { -moz-transition: all ease-in-out; -o-transition: all ease-in-out; -webkit-transition: all ease-in-out; transition: all ease-in-out; background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzVmYzRmMyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzVmYzRmMyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='); background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5fc4f3), color-stop(100%, #5fc4f3)); background: -moz-linear-gradient(top, #5fc4f3, #5fc4f3); background: -webkit-linear-gradient(top, #5fc4f3, #5fc4f3); background: linear-gradient(to bottom, #5fc4f3, #5fc4f3); text-shadow: #65c2ed; background-color: #65c2ed; -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 2px 3px rgba(0, 0, 0, 0.13431); -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 2px 3px rgba(0, 0, 0, 0.13431); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 2px 3px rgba(0, 0, 0, 0.13431); }
 /* line 146, sass/framework/_mixins.scss */
 button:active { background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQzYjRlOSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzQzYjRlOSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='); background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #43b4e9), color-stop(100%, #43b4e9)); background: -moz-linear-gradient(top, #43b4e9, #43b4e9); background: -webkit-linear-gradient(top, #43b4e9, #43b4e9); background: linear-gradient(to bottom, #43b4e9, #43b4e9); -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
-/* line 200, sass/_pages.scss */
+/* line 204, sass/_pages.scss */
 button[name="generate"] { margin: 15px 0 27px 0; }
 
 @media (max-width: 1550px) { /* line 3, sass/_responsive.scss */
